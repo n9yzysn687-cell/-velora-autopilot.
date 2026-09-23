@@ -19,8 +19,13 @@
     "free_hf_input_json": {}
   },
   "youtube": {
-    "upload_enabled": false,
-    "privacy": "private"
+    "upload_enabled": true,
+    "privacy": "private",
+    "public_mode": "disabled",
+    "require_youtube_channel_lock": true,
+    "max_uploads_per_run": 1,
+    "synthetic_media_disclosure": true,
+    "made_for_kids": false
   },
   "feedback": {
     "enabled": true,
