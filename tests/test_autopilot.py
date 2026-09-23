@@ -30,6 +30,7 @@ class SourceTests(unittest.TestCase):
         text=template_story(T,'deesezrxh')
         self.assertIn(T.url,text['description'])
         self.assertFalse(text['verified'])
+        self.assertLessEqual(len(text['script'].split()),55)
 
 class LoopTests(unittest.TestCase):
     def make_root(self,path,daily=1):
@@ -54,6 +55,8 @@ class LoopTests(unittest.TestCase):
             self.assertFalse(manifest['public_youtube_upload'])
             self.assertFalse(manifest['script_verified'])
             self.assertTrue(Path(first['research_report']).exists())
+            self.assertTrue(Path(first['storyboard']).exists())
+            self.assertEqual(json.loads(Path(first['storyboard']).read_text())['director_version'],'V3.2')
             self.assertEqual(manifest['research']['report_file'],'research.json')
             self.assertEqual(manifest['source']['provenance'],'hacker_news')
             memory=json.loads((root/'state/productions.json').read_text())
