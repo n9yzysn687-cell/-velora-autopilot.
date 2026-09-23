@@ -1,4 +1,4 @@
-name: VELORA Autopilot · deesezrxh V3.2 QA
+name: VELORA Autopilot · deesezrxh V3.2
 on:
   push:
     paths:
