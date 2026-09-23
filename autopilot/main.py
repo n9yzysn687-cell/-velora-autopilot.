@@ -97,6 +97,7 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
         safe_write(out/'story.json',story)
         storyboard=make_storyboard(story,config['channel_name'])
         safe_write(out/'research.json',research)
+        safe_write(out/'storyboard.json',storyboard)
         gpu_clip=None
         if config['providers'].get('video')=='hf_zerogpu':
             gpu_prompt=(f"Cinematic editorial documentary, {topic.headline}. "
