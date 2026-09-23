@@ -1,11 +1,16 @@
 {
-  "seen_ids": [],
-  "runs": {},
-  "last_topic": "",
-  "last_source": "",
-  "last_status": "paused_after_error",
-  "last_error": "RuntimeError: Narration 29.0s exceeds 29s short; shorten script instead of truncating speech.",
+  "seen_ids": [
+    "48609994"
+  ],
+  "runs": {
+    "2026-09-23": 1
+  },
+  "last_topic": "Votre guide sur l'intelligence artificielle",
+  "last_source": "https://theassociationwebmasters.blogspot.com/2026/06/i-spent-morning-chasing-ai-garage-sales.html",
+  "last_status": "draft_ready",
+  "last_error": "",
   "failed_topics": {
     "48609994": 1
-  }
+  },
+  "last_time": "20260923T201718Z"
 }

@@ -1,4 +1,6 @@
 {
-  "status": "paused_after_error",
-  "message": "RuntimeError: Narration 29.0s exceeds 29s short; shorten script instead of truncating speech."
+  "status": "draft_ready",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260923T201718Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260923T201718Z/manifest.json",
+  "topic": "Votre guide sur l'intelligence artificielle"
 }
