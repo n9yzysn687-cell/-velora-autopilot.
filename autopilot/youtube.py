@@ -277,11 +277,41 @@ def upload_one(root:Path,config:dict,env:dict|None=None,
                            encoding='utf8')
     return result
 
+def connection_check(config:dict,env:dict|None=None,
+                     session:requests.Session|None=None)->dict:
+    env=os.environ if env is None else env
+    state=check_oauth_settings(config,env)
+    if state['status']!='configured_not_yet_verified':
+        return state
+    http=session or requests.Session()
+    token=token_from_refresh(env,http)
+    ch=channel_info(token,http)
+    if ch['id']!=expected_channel(env):
+        raise RuntimeError('Owner authorized a different YouTube channel')
+    return {'status':'connected','channel_lock_ok':True,
+            'requested_visibility':'private' if config['youtube'].get('public_mode')!='official_releases_only'
+                                 else 'gated_public_opt_in'}
+
 if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser(description='VELORA YouTube safe connection or upload')
+    parser.add_argument('--check',action='store_true',
+                        help='Check owner identity and OAuth without uploading')
+    args=parser.parse_args()
     root=Path(__file__).resolve().parents[1]
     config=json.loads((root/'config.json').read_text(encoding='utf8'))
-    result=upload_one(root,config)
-    # Explicitly redact any future accidental private IDs in result.
-    (root/'state'/'last_upload.json').write_text(
-       json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+    try:
+        result=connection_check(config) if args.check else upload_one(root,config)
+    except (RuntimeError,ValueError,KeyError,requests.RequestException) as exc:
+        # Do not leak Google responses, OAuth secrets or private video IDs.
+        result={'status':'connection_or_delivery_blocked',
+                'error_class':type(exc).__name__,
+                'next':'Check OAuth channel choice and safety gates privately'}
+        (root/'state'/'last_upload.json').write_text(
+            json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+        print('VELORA YouTube: BLOCKED',type(exc).__name__,flush=True)
+        raise SystemExit(1)
+    if not args.check:
+        (root/'state'/'last_upload.json').write_text(
+            json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     print('VELORA YouTube:',result['status'],flush=True)
