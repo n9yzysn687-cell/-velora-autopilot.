@@ -15,12 +15,11 @@ def template_story(t: Topic, channel: str):
             'avant toute diffusion publique.\n#IA #OpenSource #Shorts'
         ),
         'script': (
-            f'Un sujet attire notre attention : « {head[:82]} ». '
-            'Faut-il vraiment s’y intéresser ? Avant de conclure, vérifions la source, '
-            'regardons le problème concret et cherchons un test reproductible. '
-            'Une belle démonstration ne suffit pas : on veut des résultats vérifiables. '
-            f'Sur {channel}, nous explorons les outils et les méthodes. '
-            'La source est en description. À bientôt pour le prochain test.'
+            f'Un sujet à suivre : « {head[:46]} ». '
+            'Qu’est-ce que cela change en pratique ? '
+            'On examine la source, on teste et on sépare les faits des promesses. '
+            f'Sur {channel}, place aux outils et aux résultats vérifiables. '
+            'La source est en description. Abonne-toi pour la suite.'
         ),
         'hook': 'Une idée IA à vérifier, plutôt qu’une promesse facile.',
         'verified': False,
