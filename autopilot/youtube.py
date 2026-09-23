@@ -250,8 +250,20 @@ def upload_one(root:Path,config:dict,env:dict|None=None,
         response=resumable_insert(video_path,body,token,http)
         vid=response['id']
         matched=False
+    # Read actual YouTube visibility. Unverified API projects may be forced
+    # private even when videos.insert requested public.
+    verify=http.get(API+'/videos',headers={'Authorization':'Bearer '+token},
+                    params={'part':'status','id':vid},timeout=25)
+    verify.raise_for_status()
+    verified=verify.json().get('items',[])
+    if len(verified)!=1 or verified[0].get('id')!=vid:
+        raise RuntimeError('Cannot verify YouTube upload; stop before marking published')
+    privacy=verified[0].get('status',{}).get('privacyStatus','')
+    if privacy not in ('public','private','unlisted'):
+        raise RuntimeError('Unknown final YouTube privacy status; stop')
     # Never print/store private IDs in the public repository or Actions logs.
     match['status']='PUBLISHED' if privacy=='public' else 'UPLOADED_PRIVATE'
+    match.pop('video_id',None)
     match['publication_visibility']=privacy
     if privacy=='public':
         match['video_id']=vid
