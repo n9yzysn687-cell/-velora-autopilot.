@@ -19,6 +19,9 @@ jobs:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       GEMINI_FREE_ONLY_CONFIRMED: ${{ vars.GEMINI_FREE_ONLY_CONFIRMED || 'false' }}
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
       GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash-lite' }}
     steps:
       - uses: actions/checkout@v4
