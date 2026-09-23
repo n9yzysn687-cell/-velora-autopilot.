@@ -15,6 +15,7 @@ import requests
 
 YT_TOKEN = 'https://oauth2.googleapis.com/token'
 YT_REPORT = 'https://youtubeanalytics.googleapis.com/v2/reports'
+YT_DATA = 'https://www.googleapis.com/youtube/v3'
 VIDEO_ID = re.compile(r'^[A-Za-z0-9_-]{11}$')
 METRICS = 'views,averageViewPercentage,likes,subscribersGained'
 OPTIONS = {'question', 'direct'}
@@ -62,6 +63,9 @@ def validate_mapping(raw: dict, today: date, themes: list[str]) -> list[dict]:
         theme, variant = entry.get('theme'), entry.get('variant')
         if theme not in themes or variant not in OPTIONS:
             continue
+        # Public repo: never commit or process private/unlisted IDs by mistake.
+        if entry.get('visibility') != 'public':
+            continue
         eligible.append({'video_id': vid, 'published': published,
                          'theme': theme, 'variant': variant})
     return eligible[:60]
@@ -102,22 +106,77 @@ def aggregate(rows: list[tuple[dict, dict]], field: str, min_views: int,
     return {name: sum(values)/len(values) for name, values in groups.items()
             if len(values) >= min_videos}
 
+def discover_own_public_uploads(root: Path, token: str, http: requests.Session) -> list[dict]:
+    # Owner-authenticated read-only API, no scraping or publication.
+    ledger_path = root/'state'/'productions.json'
+    if not ledger_path.exists():
+        return []
+    ledger = json.loads(ledger_path.read_text(encoding='utf8')).get('productions', [])
+    if not ledger:
+        return []
+    headers = {'Authorization': 'Bearer '+token}
+    res = http.get(YT_DATA+'/channels', headers=headers, timeout=20,
+                   params={'part':'contentDetails', 'mine':'true', 'maxResults':1})
+    res.raise_for_status()
+    channels = res.json().get('items', [])
+    if not channels:
+        return []
+    uploads = channels[0].get('contentDetails',{}).get('relatedPlaylists',{}).get('uploads')
+    if not uploads:
+        return []
+    res = http.get(YT_DATA+'/playlistItems', headers=headers, timeout=20,
+                   params={'part':'contentDetails', 'playlistId':uploads, 'maxResults':50})
+    res.raise_for_status()
+    ids = [v.get('contentDetails',{}).get('videoId','') for v in res.json().get('items', [])]
+    ids = [v for v in ids if VIDEO_ID.fullmatch(v)]
+    if not ids:
+        return []
+    res = http.get(YT_DATA+'/videos', headers=headers, timeout=20,
+                   params={'part':'snippet,status','id':','.join(ids),'maxResults':50})
+    res.raise_for_status()
+    output = []
+    used = set()
+    for v in res.json().get('items', []):
+        if v.get('status',{}).get('privacyStatus') != 'public':
+            continue
+        desc = v.get('snippet',{}).get('description','')
+        vid = v.get('id','')
+        if not VIDEO_ID.fullmatch(vid) or not isinstance(desc,str):
+            continue
+        published_at = v.get('snippet',{}).get('publishedAt','')[:10]
+        # Match original source URL, which our generated descriptions contain;
+        # never guess provenance based on a generic title.
+        for prod in reversed(ledger):
+            source = prod.get('source_url','')
+            if (source and source in desc and prod.get('id') not in used
+                    and prod.get('theme') and prod.get('variant') in OPTIONS):
+                output.append({'video_id':vid, 'published_at':published_at,
+                               'theme':prod['theme'], 'variant':prod['variant'],
+                               'visibility':'public'})
+                used.add(prod['id'])
+                break
+    return output
+
 def learn(root: Path, config: dict, env: dict | None = None,
           session: requests.Session | None = None,
           today: date | None = None) -> dict:
     env = os.environ if env is None else env
     today = date.today() if today is None else today
     path = root / 'data' / 'published.json'
-    if not path.exists():
-        return feedback_status('awaiting_published_video_mapping')
-    raw = json.loads(path.read_text(encoding='utf8'))
-    entries = validate_mapping(raw, today, config.get('themes', []))
-    if not entries:
-        return feedback_status('awaiting_mature_published_videos')
+    manual = json.loads(path.read_text(encoding='utf8')) if path.exists() else {'videos': []}
     if not can_collect(env):
         return feedback_status('awaiting_youtube_readonly_oauth')
     http = session or requests.Session()
     token = token_from_refresh(env, http)
+    auto = discover_own_public_uploads(root, token, http)
+    # Explicit manual mapping overrides inferred mapping when present.
+    manual_ids = {m.get('video_id') for m in manual.get('videos', [])
+                  if isinstance(m,dict)}
+    entries = validate_mapping({'videos':manual.get('videos', [])+
+               [m for m in auto if m['video_id'] not in manual_ids]},
+               today, config.get('themes', []))
+    if not entries:
+        return feedback_status('awaiting_mature_published_videos')
     rows = []
     for entry in entries:
         result = fetch_first_week(entry, token, http)
