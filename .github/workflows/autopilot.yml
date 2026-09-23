@@ -1,4 +1,4 @@
-name: VELORA Autopilot · deesezrxh V3.2
+name: VELORA Autopilot · deesezrxh V3.3
 on:
   push:
     paths:
@@ -22,6 +22,9 @@ jobs:
       YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
       YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      YT_CHANNEL_ID: ${{ vars.YT_CHANNEL_ID }}
+      YT_ALLOW_PUBLIC_AUTOMATION: ${{ vars.YT_ALLOW_PUBLIC_AUTOMATION || 'NO' }}
+      YT_MEDIA_RIGHTS_APPROVED: ${{ vars.YT_MEDIA_RIGHTS_APPROVED || 'NO' }}
       GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash-lite' }}
     steps:
       - uses: actions/checkout@v4
@@ -60,6 +63,11 @@ jobs:
         id: create
         continue-on-error: true
         run: python -m autopilot.main
+      - name: Check owner channel and upload only if approved gates pass
+        id: youtube
+        if: steps.create.outcome == 'success'
+        continue-on-error: true
+        run: python -m autopilot.youtube
       - name: Persist production state
         if: always()
         run: |
@@ -85,8 +93,9 @@ jobs:
             output/**/manifest.json
             state/last_run.json
             state/feedback.json
+            state/last_upload.json
           retention-days: 7
           if-no-files-found: warn
       - name: Report genuine production failure
-        if: steps.create.outcome == 'failure'
+        if: steps.create.outcome == 'failure' || steps.youtube.outcome == 'failure'
         run: exit 1
