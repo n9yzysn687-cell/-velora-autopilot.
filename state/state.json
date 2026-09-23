@@ -3,6 +3,9 @@
   "runs": {},
   "last_topic": "",
   "last_source": "",
-  "last_status": "not_started",
-  "last_error": ""
+  "last_status": "paused_after_error",
+  "last_error": "RuntimeError: Narration 29.0s exceeds 29s short; shorten script instead of truncating speech.",
+  "failed_topics": {
+    "48609994": 1
+  }
 }

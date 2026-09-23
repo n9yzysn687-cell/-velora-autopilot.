@@ -1,0 +1,4 @@
+{
+  "status": "paused_after_error",
+  "message": "RuntimeError: Narration 29.0s exceeds 29s short; shorten script instead of truncating speech."
+}
