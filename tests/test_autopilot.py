@@ -53,6 +53,13 @@ class LoopTests(unittest.TestCase):
             manifest=json.loads(Path(first['manifest']).read_text())
             self.assertFalse(manifest['public_youtube_upload'])
             self.assertFalse(manifest['script_verified'])
+            self.assertTrue(Path(first['research_report']).exists())
+            self.assertEqual(manifest['research']['report_file'],'research.json')
+            self.assertEqual(manifest['source']['provenance'],'hacker_news')
+            memory=json.loads((root/'state/productions.json').read_text())
+            self.assertEqual(len(memory['productions']),1)
+            self.assertEqual(memory['productions'][0]['source_url'],T.url)
+            self.assertEqual(memory['productions'][0]['status'],'DRAFT_REVIEW_REQUIRED')
     def test_zero_budget_enforced(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d);self.make_root(root)
