@@ -16,6 +16,23 @@ from .writer import generate_story
 from .render import render
 from .free_gpu import generate_free_clip
 
+
+def editorial_plan(config:dict, feedback:dict, day:datetime)->tuple[list[str],str]:
+    themes=list(config['themes'])
+    if not themes:
+        raise ValueError('At least one editorial theme required')
+    tick=day.date().toordinal()
+    start=tick % len(themes)
+    exploratory=themes[start:]+themes[:start]
+    preferred=feedback.get('preferred_theme') if feedback.get('status')=='experimental_preference' else None
+    if preferred in themes and tick%3!=0:
+        themes=[preferred]+[t for t in exploratory if t!=preferred]
+    else:
+        themes=exploratory
+    preferred_variant=feedback.get('preferred_variant') if feedback.get('status')=='experimental_preference' else None
+    variant=preferred_variant if preferred_variant in ('direct','question') and tick%3!=0 else ('question' if tick%2==0 else 'direct')
+    return themes,variant
+
 ROOT=Path(__file__).resolve().parents[1]
 
 def read_json(path:Path,default):
@@ -49,6 +66,8 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
         state.update(last_status='daily_limit_reached',last_error='')
         safe_write(path,state)
         return {'status':'daily_limit_reached','count_today':used}
+    feedback=read_json(root/'state'/'feedback.json',{})
+    themes,variant=editorial_plan(config,feedback,datetime.now(timezone.utc))
     failures=state.get('failed_topics',{})
     seen=set(state.get('seen_ids',[])) | {ident for ident,c in failures.items() if c>=2}
     try:
@@ -58,10 +77,10 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
                 raise RuntimeError('Missing offline fixture')
             topic=Topic(**obj)
         else:
-            topic=discover(config['themes'],seen)
+            topic=discover(themes,seen)
         if topic.id in seen:
             raise RuntimeError('Topic already processed, skipping safely.')
-        story=generate_story(topic,config['channel_name'],config.get('language','fr'),config['providers']['script'])
+        story=generate_story(topic,config['channel_name'],config.get('language','fr'),config['providers']['script'],variant=variant)
         stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
         out=root/'output'/stamp
         out.mkdir(parents=True,exist_ok=True)
@@ -86,12 +105,20 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
           'channel':config['channel_name'],'status':'DRAFT_REVIEW_REQUIRED',
           'public_youtube_upload':False, 'paid_video_generation':False,
           'source':{'title':topic.headline,'url':topic.url,'date':topic.date},
+          'editorial_experiment':{'theme':topic.theme,'variant':variant,'feedback_status':feedback.get('status','not_connected')},
           'script_verified':False,'media_rights_checked':False,'mp4_watched':False,
           'production':video,'story':story,
           'visual_note':('One actual authenticated ZeroGPU scene plus motion design.' if gpu_clip else 'Stylized graphic motion design. Not Seedance/Wan or photorealistic AI clips.'),
           'next':'Watch the video, verify sources and rights, then publish manually or configure an authorized uploader.'
         }
         safe_write(out/'manifest.json',manifest)
+        ledger_file=root/'state'/'productions.json'
+        ledger=read_json(ledger_file,{'productions':[]})
+        ledger.setdefault('productions',[]).append({'id':stamp,'source_url':topic.url,
+            'source_title':topic.headline,'theme':topic.theme,'variant':variant,
+            'status':'DRAFT_REVIEW_REQUIRED','created_at':stamp})
+        ledger['productions']=ledger['productions'][-200:]
+        safe_write(ledger_file,ledger)
         result={'status':'draft_ready','video':video['video'],'manifest':str(out/'manifest.json'),'topic':topic.headline}
         safe_write(root/'state'/'last_run.json',result)
         print(json.dumps(result,ensure_ascii=False),flush=True)
