@@ -1,7 +1,12 @@
 {
   "channel_name": "deesezrxh",
   "language": "fr",
-  "themes": ["intelligence artificielle", "automatisation", "création vidéo IA", "outils open source"],
+  "themes": [
+    "intelligence artificielle",
+    "automatisation",
+    "création vidéo IA",
+    "outils open source"
+  ],
   "shorts_per_day": 1,
   "format": "9:16",
   "max_seconds": 29,
@@ -16,5 +21,14 @@
   "youtube": {
     "upload_enabled": false,
     "privacy": "private"
+  },
+  "feedback": {
+    "enabled": true,
+    "first_week_maturity_days": 9,
+    "min_video_views": 100,
+    "min_videos_per_option": 3,
+    "min_feedback_lift": 0.08,
+    "allow_auto_theme_choice": true,
+    "allow_auto_hook_choice": true
   }
 }
