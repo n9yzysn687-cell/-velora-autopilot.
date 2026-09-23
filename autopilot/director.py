@@ -56,6 +56,8 @@ def make_storyboard(story:dict, channel:str, *,
     source=str(story.get('source_url') or '').strip()
     if not headline or not source or not script:
         raise ValueError('Director requires script, real source title and URL.')
+    if len(words(script))<12:
+        raise ValueError('Script too short for a coherent Director film.')
     count=max(MIN_SCENES,min(MAX_SCENES,math.ceil(len(words(script))/10)))
     count=min(count,len(words(script)))
     parts=split_spoken(script,count)
@@ -109,8 +111,6 @@ def allocate_frames(storyboard:dict,duration:float,fps:int=24)->list[int]:
     weights=[max(1,int(s['weight'])) for s in items]
     remaining=total_frames-len(items)*fps*2
     if remaining<0:raise ValueError('Scenes below minimum length.')
-    allocations=[fps*2+remaining*sum(weights[:i])//sum(weights)
-                 for i in range(len(items))]
     # Compute differences of cumulative proportional allocation.
     allocations=[fps*2+remaining*sum(weights[:i+1])//sum(weights)-
                  remaining*sum(weights[:i])//sum(weights)
