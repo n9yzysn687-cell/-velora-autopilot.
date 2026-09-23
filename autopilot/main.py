@@ -11,7 +11,7 @@ import os
 from pathlib import Path
 import sys
 import traceback
-from .source import Topic,discover
+from .source import Topic,select_topic
 from .writer import generate_story
 from .render import render
 from .free_gpu import generate_free_clip
@@ -69,6 +69,12 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
     feedback=read_json(root/'state'/'feedback.json',{})
     themes,variant=editorial_plan(config,feedback,datetime.now(timezone.utc))
     failures=state.get('failed_topics',{})
+    ledger_file=root/'state'/'productions.json'
+    ledger=read_json(ledger_file,{'productions':[]})
+    history=list(ledger.get('productions',[]))
+    if state.get('last_source'):
+        history.append({'source_url':state['last_source'],
+                        'source_title':state.get('last_topic','')})
     seen=set(state.get('seen_ids',[])) | {ident for ident,c in failures.items() if c>=2}
     try:
         if fixture:
@@ -76,8 +82,11 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
             if not obj:
                 raise RuntimeError('Missing offline fixture')
             topic=Topic(**obj)
+            research={'algorithm':'OFFLINE_FIXTURE_FOR_TESTS','chosen':{'headline':topic.headline,
+                       'source_url':topic.url},'gate':'HUMAN_FACT_CHECK_REQUIRED'}
         else:
-            topic=discover(themes,seen)
+            topic,research=select_topic(themes,seen,history=history,
+                max_hn_hours=int(config.get('research',{}).get('max_hn_age_hours',120)))
         if topic.id in seen:
             raise RuntimeError('Topic already processed, skipping safely.')
         story=generate_story(topic,config['channel_name'],config.get('language','fr'),config['providers']['script'],variant=variant)
@@ -85,6 +94,7 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
         out=root/'output'/stamp
         out.mkdir(parents=True,exist_ok=True)
         safe_write(out/'story.json',story)
+        safe_write(out/'research.json',research)
         gpu_clip=None
         if config['providers'].get('video')=='hf_zerogpu':
             gpu_prompt=(f"Cinematic editorial documentary, {topic.headline}. "
@@ -99,12 +109,20 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
         state['seen_ids']=state['seen_ids'][-1000:]
         state.setdefault('runs',{})[day]=used+1
         state['runs']={k:v for k,v in state['runs'].items() if k>=day[:7]}
-        state.update(last_status='draft_ready',last_topic=topic.headline,last_source=topic.url,last_error='',last_time=stamp)
+        state.update(last_status='draft_ready',last_topic=topic.headline,last_source=topic.url,
+                     last_research_score=research.get('chosen',{}).get('score'),
+                     last_research_origin=topic.origin,
+                     last_error='',last_time=stamp)
         safe_write(path,state)
         manifest={
           'channel':config['channel_name'],'status':'DRAFT_REVIEW_REQUIRED',
           'public_youtube_upload':False, 'paid_video_generation':False,
-          'source':{'title':topic.headline,'url':topic.url,'date':topic.date},
+          'source':{'title':topic.headline,'url':topic.url,'date':topic.date,
+                    'timestamp_type':'official_release_published_at' if topic.origin=='github_release' else 'hacker_news_submission_at',
+                    'provenance':topic.origin,'research_quality_score':research.get('chosen',{}).get('score')},
+          'research':{'report_file':'research.json','fact_check_required':True,
+                      'candidates_examined':research.get('candidates_examined'),
+                      'candidates_eligible':research.get('candidates_eligible')},
           'editorial_experiment':{'theme':topic.theme,'variant':variant,'feedback_status':feedback.get('status','not_connected')},
           'script_verified':False,'media_rights_checked':False,'mp4_watched':False,
           'production':video,'story':story,
@@ -112,14 +130,21 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
           'next':'Watch the video, verify sources and rights, then publish manually or configure an authorized uploader.'
         }
         safe_write(out/'manifest.json',manifest)
-        ledger_file=root/'state'/'productions.json'
-        ledger=read_json(ledger_file,{'productions':[]})
         ledger.setdefault('productions',[]).append({'id':stamp,'source_url':topic.url,
             'source_title':topic.headline,'theme':topic.theme,'variant':variant,
+            'source_type':topic.origin,
+            'research_score':research.get('chosen',{}).get('score'),
+            'script_type':config['providers']['script'],
+            'video_engine':config['providers'].get('video'),
+            'duration_seconds':video.get('duration_seconds'),
             'status':'DRAFT_REVIEW_REQUIRED','created_at':stamp})
         ledger['productions']=ledger['productions'][-200:]
         safe_write(ledger_file,ledger)
-        result={'status':'draft_ready','video':video['video'],'manifest':str(out/'manifest.json'),'topic':topic.headline}
+        result={'status':'draft_ready','video':video['video'],
+                'manifest':str(out/'manifest.json'),
+                'research_report':str(out/'research.json'),
+                'topic':topic.headline,
+                'source':topic.url,'quality_gate':research.get('gate','HUMAN_FACT_CHECK_REQUIRED')}
         safe_write(root/'state'/'last_run.json',result)
         print(json.dumps(result,ensure_ascii=False),flush=True)
         return result
