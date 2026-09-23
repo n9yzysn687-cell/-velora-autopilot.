@@ -17,16 +17,16 @@ def template_story(t: Topic, channel: str, variant: str = 'question'):
             'avant toute diffusion publique.\n#IA #OpenSource #Shorts'
         ),
         'script': (
-            (f'Un sujet à suivre : « {head[:46]} ». '
-             'Qu’est-ce que cela change en pratique ? '
-             'On examine la source, on teste et on sépare les faits des promesses. '
-             f'Sur {channel}, place aux outils et aux résultats vérifiables. '
-             'La source est en description. Abonne-toi pour la suite.')
+            (f'« {head[:42]} ». Quel intérêt concret ? '
+             'On examine la source, puis on cherche un test reproductible. '
+             'Aucune promesse sans vérification. '
+             f'C’est {channel} : des outils et des résultats à contrôler. '
+             'Source en description.')
             if variant == 'question' else
-            (f'Aujourd’hui, un nouvel angle : « {head[:40]} ». '
-             'Voici le principe : examiner la source, puis chercher un test concret. '
-             f'Chez {channel}, on vérifie avant de conclure. '
-             'Tu retrouves le lien en description. À demain pour un nouveau test.')
+            (f'À découvrir : « {head[:42]} ». '
+             'Voici le sujet, puis ce qu’il faudra vérifier concrètement. '
+             f'Sur {channel}, on explore sans confondre annonces et résultats. '
+             'La source est en description. À bientôt pour un nouveau test.')
         ),
         'hook': ('Une idée IA à vérifier, plutôt qu’une promesse facile.'
                  if variant == 'question' else 'Un outil IA à examiner aujourd’hui.'),
@@ -49,7 +49,7 @@ def generate_story(t: Topic, channel: str, language: str, backend: str, session:
     model = os.environ.get('GEMINI_MODEL', 'gemini-2.5-flash-lite')
     prompt = (
         'Create original short-form editorial writing in French as JSON with keys title, hook, script, description. '
-        'Length: 40-57 spoken words and at most 25 seconds of French speech. Do not claim facts beyond the SINGLE provided headline and URL. '
+        'Length: 34-46 spoken words and at most 24 seconds of French speech. Do not claim facts beyond the SINGLE provided headline and URL. '
         'Clearly distinguish questions, hypotheses and facts. Include the exact source URL in description. '
         'No misleading performance figures, no invented quotes, no copy-pasted source article. '
         f'CHANNEL={channel}; LANGUAGE={language}; HOOK_VARIANT={variant}; HEADLINE={t.headline}; SOURCE_URL={t.url}; SOURCE_SITE={t.domain}'
