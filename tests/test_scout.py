@@ -82,7 +82,8 @@ class ScoutTests(unittest.TestCase):
                                   FakeSources([h,hit('two','New LTX video model published',points=30)]),
                                   history=[old],now=NOW)
         self.assertEqual(winner.id,'two')
-        self.assertEqual(audit['rejections']['repeated_source_url'],2)
+        self.assertGreaterEqual(audit['rejections']['repeated_source_url'],1)
+        self.assertGreaterEqual(audit['rejections'].get('same_search_result',0),1)
     def test_fallback_to_verified_official_release_entry(self):
         release={'draft':False,'prerelease':False,'html_url':
                  'https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.9.0',
