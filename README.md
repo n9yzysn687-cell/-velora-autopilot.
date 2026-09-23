@@ -49,3 +49,20 @@ With Python 3.11+ and FFmpeg: `pip install -r requirements.txt && python -m unit
 Hugging Face documents agent access to Spaces using a per-user HF_TOKEN and `/agents.md` + `/gradio_api/info`. To add a GPU model to the loop, choose a Space with an official API, inspect its input schema, authenticate with **your own token**, respect quota/errors, and store output as a new scene file. You need to wire the specific Space input/output contract; **there is no universal `Seedance free API key` and no quota bypass in this repository**.
 
 Official reference: https://huggingface.co/docs/hub/spaces-agents
+
+
+## Feedback loop v0.2 · YouTube data → next production
+
+This edition distinguishes **render QA** from actual **audience performance**. The bot never invents view counts, watch times, subscription metrics or YouTube "trends". Before a YouTube owner grants read-only access, `state/feedback.json` deliberately says `awaiting_youtube_readonly_oauth`; the existing free daily draft loop still works.
+
+Once an authorized account is connected, each run uses YouTube Data API to discover *your own public videos*, links them only to VELORA productions whose **exact source URL** appears in the published description, and obtains YouTube Analytics for each video's *first seven days*. Video IDs for private or unlisted uploads, access/refresh tokens and raw per-video analytics are **never committed** to this public repository. The published description must retain the source URL generated in `story.json` for automatic matching. Recent uploads need at least nine days to mature, and only the latest 50 channel uploads are searched each day. You can optionally provide public video mappings in `data/published.json`.
+
+**Owner connection, not currently configured:** enable YouTube Data API v3 and YouTube Analytics API for a Google Cloud OAuth client; authorize the channel owner with *read-only* scopes `https://www.googleapis.com/auth/youtube.readonly` and `https://www.googleapis.com/auth/yt-analytics.readonly`. Save three values as **GitHub Actions repository secrets** named `YT_CLIENT_ID`, `YT_CLIENT_SECRET` and `YT_REFRESH_TOKEN`. Never paste them in an issue, README, public GitHub file or chat. Google OAuth consent and token creation require your own explicit account authorization, and the agent cannot generate or infer these secrets. See [Google's YouTube Analytics authentication guide](https://developers.google.com/youtube/analytics/authorization).
+
+The comparison uses the same seven-day exposure window, a minimum of 100 views for each included video and at least three eligible videos **per option**. It tests two editorial openings (`question` and `direct`) and channel theme categories. Only if the measured comparison shows the configured minimum score gap does `state/feedback.json` save a provisional preference. VELORA explores another option on roughly one third of days to keep testing new ideas. This is a heuristic for controlled iteration, **not proof of causation or a forecast**. The public file contains only aggregate experimental preferences and sample counts, not detailed YouTube measurements.
+
+`state/productions.json` now links each generated MP4 draft to its source URL, theme, opening variant and creation timestamp. The feedback run executes *before* the daily writer; that is the actual data handoff in the loop:
+
+`public upload → read-only analytics → comparable 7-day cohorts → minimum-sample gate → experimental editorial preference → theme + hook planning → new review-only MP4 → repeat`.
+
+No automatic Google posting, paid model fallback, unauthorized scraping, copyright bypass or unlimited free GPU use is enabled. Your channel's real video analytics remain unavailable until OAuth is connected **and the channel has suitable published, sufficiently old videos**. GitHub Actions failures are shown in Actions, with no fake success reporting.
