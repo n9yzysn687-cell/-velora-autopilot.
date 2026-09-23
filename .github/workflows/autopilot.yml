@@ -25,13 +25,15 @@ jobs:
           set -euo pipefail
           cat bootstrap/part{01..06}.b64 | base64 --decode > /tmp/velora-source.tar.xz
           echo '72c7f5b94b1f57c39303aad111a1a703d87152b9a45a731353f5b306109a4574  /tmp/velora-source.tar.xz' | sha256sum --check
-          tar -xJf /tmp/velora-source.tar.xz
-          rm -rf bootstrap
-          git config user.name 'velora-autopilot[bot]'
-          git config user.email 'velora-autopilot[bot]@users.noreply.github.com'
-          git add -A
-          git commit -m 'Install open-source VELORA Autopilot production engine' 
-          git push
+          if [ ! -f autopilot/main.py ]; then
+            tar -xJf /tmp/velora-source.tar.xz --exclude='./.github/workflows/autopilot.yml'
+            rm -rf bootstrap
+            git config user.name 'velora-autopilot[bot]'
+            git config user.email 'velora-autopilot[bot]@users.noreply.github.com'
+            git add -A
+            git commit -m 'Install open-source VELORA Autopilot production engine'
+            git push
+          fi
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -52,7 +54,7 @@ jobs:
         run: |
           git config user.name 'velora-autopilot[bot]'
           git config user.email 'velora-autopilot[bot]@users.noreply.github.com'
-          git add state/state.json state/last_run.json
+          git add -A state
           if ! git diff --cached --quiet; then
             git commit -m 'chore: save production state [skip ci]'
             git push
