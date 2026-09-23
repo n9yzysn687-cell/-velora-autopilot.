@@ -1,5 +1,8 @@
 import subprocess
 import tempfile
+import json
+from hashlib import sha256
+from PIL import Image
 from pathlib import Path
 import unittest
 from unittest.mock import patch
@@ -20,6 +23,21 @@ class RenderRealTests(unittest.TestCase):
             self.assertGreater(result['bytes'],10000)
             self.assertGreater(result['duration_seconds'],18)
             self.assertLessEqual(result['duration_seconds'],29.1)
+            self.assertEqual(result['director_version'],'V3.2')
+            self.assertGreaterEqual(len(set(result['layouts'])),5)
+            self.assertEqual(result['scene_count'],len(result['layouts']))
+            board=json.loads((Path(d)/'storyboard.json').read_text())
+            self.assertEqual(board['scene_count'],result['scene_count'])
+            self.assertEqual(round(board['scenes'][-1]['end_seconds'],1),
+                             round(result['duration_seconds'],1))
+            frames=sorted((Path(d)/'frames').glob('scene_*.png'))
+            self.assertEqual(len(frames),result['scene_count'])
+            imhash=set()
+            for file in frames:
+                with Image.open(file) as im:
+                    self.assertEqual(im.size,(720,1280))
+                    imhash.add(sha256(im.tobytes()).hexdigest())
+            self.assertEqual(len(imhash),result['scene_count'])
             print('REAL RENDER QA',result)
 
 if __name__=='__main__':unittest.main()
