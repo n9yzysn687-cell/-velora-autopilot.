@@ -1,4 +1,4 @@
-name: VELORA Autopilot · deesezrxh V3.3
+name: VELORA Autopilot · deesezrxh V3.3 QA
 on:
   push:
     paths:
@@ -57,9 +57,14 @@ jobs:
           python -m pip install -r requirements-zerogpu.txt
       - name: Run all unit and real-MP4 tests
         run: python -m unittest discover -s tests -v
+      - name: Check YouTube connection and bound channel identity without uploading
+        id: preflight
+        continue-on-error: true
+        run: python -m autopilot.youtube --check
       - name: Ingest 7-day YouTube metrics and learn before writing
         run: python -m autopilot.feedback
       - name: Produce storyboarded review-only MP4
+        if: steps.preflight.outcome != 'failure'
         id: create
         continue-on-error: true
         run: python -m autopilot.main
@@ -97,5 +102,5 @@ jobs:
           retention-days: 7
           if-no-files-found: warn
       - name: Report genuine production failure
-        if: steps.create.outcome == 'failure' || steps.youtube.outcome == 'failure'
+        if: steps.create.outcome == 'failure' || steps.youtube.outcome == 'failure' || steps.preflight.outcome == 'failure'
         run: exit 1
