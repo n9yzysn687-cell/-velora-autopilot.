@@ -66,3 +66,14 @@ The comparison uses the same seven-day exposure window, a minimum of 100 views f
 `public upload → read-only analytics → comparable 7-day cohorts → minimum-sample gate → experimental editorial preference → theme + hook planning → new review-only MP4 → repeat`.
 
 No automatic Google posting, paid model fallback, unauthorized scraping, copyright bypass or unlimited free GPU use is enabled. Your channel's real video analytics remain unavailable until OAuth is connected **and the channel has suitable published, sufficiently old videos**. GitHub Actions failures are shown in Actions, with no fake success reporting.
+
+
+## V3.1 · Scout and production memory (live source code)
+
+The research stage no longer accepts the first search result. It samples up to two English-language Hacker News searches for each configured French editorial theme and public official releases from ComfyUI and Hugging Face Diffusers. It compares eligible candidates based on topical relevance, recency of the **HN submission** (not the source article's original publication date), public HN points as a *discovery signal only*, and a disclosed provenance preference. A GitHub release is checked against the official repository release listing.
+
+The quality gate excludes generic/off-topic headlines, link farms and common user-blog platforms, unsafe URLs, repeated source URLs, semantically repeated headlines, topics already marked completed and stale HN submissions. The bot stops with a documented error if all candidates fail rather than producing filler. **No selection score certifies that an article's claims are true or predicts a video's YouTube results.** Source URLs and factual claims remain review-required.
+
+Each completed film now includes a `research.json` with the selected source, top alternative candidates, input sources, rejected-candidate counts and reason for requiring human fact-checking. The `manifest.json` carries the source origin and source timestamp meaning; `state/productions.json` carries the persistent production memory: theme, hook experiment, source URL, source origin, clip duration, engine and quality selection score. This log is used in future Scout runs to prevent duplicate ideas even if reposted with a new HN ID. The run's results, including source and review status, are also in `state/last_run.json`.
+
+The first automated batch retains the existing free CPU motion-design renderer and human review before publishing. V3.1 improves research and memory, **not yet video-model connection, YouTube OAuth or visual cinematography**. Research score, HN points and selection preferences are not fake YouTube performance measurements.
