@@ -30,5 +30,15 @@
     "min_feedback_lift": 0.08,
     "allow_auto_theme_choice": true,
     "allow_auto_hook_choice": true
+  },
+  "research": {
+    "max_hn_age_hours": 120,
+    "hn_queries_per_theme": 2,
+    "official_release_sources": [
+      "comfyanonymous/ComfyUI",
+      "huggingface/diffusers"
+    ],
+    "human_fact_check_required": true,
+    "trust_hn_engagement_as_youtube_demand": false
   }
 }
