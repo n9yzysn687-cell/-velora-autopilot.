@@ -1,4 +1,4 @@
-name: VELORA Autopilot · deesezrxh V3.1 QA
+name: VELORA Autopilot · deesezrxh V3.2 Director
 on:
   push:
     paths:
@@ -56,7 +56,7 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Ingest 7-day YouTube metrics and learn before writing
         run: python -m autopilot.feedback
-      - name: Produce one review-only MP4
+      - name: Produce storyboarded review-only MP4
         id: create
         continue-on-error: true
         run: python -m autopilot.main
@@ -80,6 +80,8 @@ jobs:
             output/**/short.mp4
             output/**/story.json
             output/**/research.json
+            output/**/storyboard.json
+            output/**/frames/scene_*.png
             output/**/manifest.json
             state/last_run.json
             state/feedback.json
