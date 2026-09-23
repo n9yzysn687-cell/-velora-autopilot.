@@ -1,0 +1,20 @@
+{
+  "channel_name": "deesezrxh",
+  "language": "fr",
+  "themes": ["intelligence artificielle", "automatisation", "création vidéo IA", "outils open source"],
+  "shorts_per_day": 1,
+  "format": "9:16",
+  "max_seconds": 29,
+  "max_daily_paid_eur": 0,
+  "providers": {
+    "script": "template",
+    "video": "motion_design",
+    "free_hf_space": "",
+    "free_hf_api_name": "",
+    "free_hf_input_json": {}
+  },
+  "youtube": {
+    "upload_enabled": false,
+    "privacy": "private"
+  }
+}

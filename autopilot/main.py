@@ -1,0 +1,116 @@
+"""A bounded scheduled iteration; GitHub Actions supplies the recurring loop.
+
+This process never loops indefinitely or spends credits. One invocation creates
+at most one Shorts draft. On success the state file is committed by CI.
+"""
+from __future__ import annotations
+import argparse
+from datetime import datetime,timezone
+import json
+import os
+from pathlib import Path
+import sys
+import traceback
+from .source import Topic,discover
+from .writer import generate_story
+from .render import render
+from .free_gpu import generate_free_clip
+
+ROOT=Path(__file__).resolve().parents[1]
+
+def read_json(path:Path,default):
+    try:
+        return json.loads(path.read_text(encoding='utf8'))
+    except FileNotFoundError:
+        return default
+
+def safe_write(path:Path,data):
+    path.parent.mkdir(parents=True,exist_ok=True)
+    temp=path.with_suffix(path.suffix+'.tmp')
+    temp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+    temp.replace(path)
+
+def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
+    config=read_json(root/'config.json',None)
+    if config is None:
+        raise RuntimeError('Missing config.json')
+    daily=int(config.get('shorts_per_day',1))
+    spend=float(config.get('max_daily_paid_eur',0))
+    if daily not in range(0,5) or spend < 0:
+        raise ValueError('Invalid limits; shorts_per_day must be 0-4, budget >=0.')
+    if spend>0:
+        # Payment backend is deliberately absent in this no-surprise-cost edition.
+        raise RuntimeError('Paid rendering is deliberately disabled; set max_daily_paid_eur to 0.')
+    path=root/'state'/'state.json'
+    state=read_json(path,{'seen_ids':[], 'runs':{}})
+    day=datetime.now(timezone.utc).date().isoformat()
+    used=int(state.get('runs',{}).get(day,0))
+    if daily==0 or used>=daily:
+        state.update(last_status='daily_limit_reached',last_error='')
+        safe_write(path,state)
+        return {'status':'daily_limit_reached','count_today':used}
+    failures=state.get('failed_topics',{})
+    seen=set(state.get('seen_ids',[])) | {ident for ident,c in failures.items() if c>=2}
+    try:
+        if fixture:
+            obj=read_json(fixture,None)
+            if not obj:
+                raise RuntimeError('Missing offline fixture')
+            topic=Topic(**obj)
+        else:
+            topic=discover(config['themes'],seen)
+        if topic.id in seen:
+            raise RuntimeError('Topic already processed, skipping safely.')
+        story=generate_story(topic,config['channel_name'],config.get('language','fr'),config['providers']['script'])
+        stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+        out=root/'output'/stamp
+        out.mkdir(parents=True,exist_ok=True)
+        safe_write(out/'story.json',story)
+        gpu_clip=None
+        if config['providers'].get('video')=='hf_zerogpu':
+            gpu_prompt=(f"Cinematic editorial documentary, {topic.headline}. "
+                        'Abstract visualization, photorealistic lighting and deliberate camera movement, '
+                        'no captions, no simulated dashboards, no fabricated visible logos, 9:16.')
+            gpu_clip=generate_free_clip(config['providers'],gpu_prompt,out/'zerogpu_scene.mp4')
+        elif config['providers'].get('video')!='motion_design':
+            raise RuntimeError('Unrecognized video engine. Paid API fallback is forbidden.')
+        video=render(story,config['channel_name'],out,config.get('max_seconds',29),config.get('language','fr'),gpu_clip)
+        # Only mark the topic as used once an MP4 passes QA.
+        state.setdefault('seen_ids',[]).append(topic.id)
+        state['seen_ids']=state['seen_ids'][-1000:]
+        state.setdefault('runs',{})[day]=used+1
+        state['runs']={k:v for k,v in state['runs'].items() if k>=day[:7]}
+        state.update(last_status='draft_ready',last_topic=topic.headline,last_source=topic.url,last_error='',last_time=stamp)
+        safe_write(path,state)
+        manifest={
+          'channel':config['channel_name'],'status':'DRAFT_REVIEW_REQUIRED',
+          'public_youtube_upload':False, 'paid_video_generation':False,
+          'source':{'title':topic.headline,'url':topic.url,'date':topic.date},
+          'script_verified':False,'media_rights_checked':False,'mp4_watched':False,
+          'production':video,'story':story,
+          'visual_note':('One actual authenticated ZeroGPU scene plus motion design.' if gpu_clip else 'Stylized graphic motion design. Not Seedance/Wan or photorealistic AI clips.'),
+          'next':'Watch the video, verify sources and rights, then publish manually or configure an authorized uploader.'
+        }
+        safe_write(out/'manifest.json',manifest)
+        result={'status':'draft_ready','video':video['video'],'manifest':str(out/'manifest.json'),'topic':topic.headline}
+        safe_write(root/'state'/'last_run.json',result)
+        print(json.dumps(result,ensure_ascii=False),flush=True)
+        return result
+    except Exception as exc:
+        err=f'{type(exc).__name__}: {str(exc)[:380]}'
+        if 'topic' in locals():
+            failures[topic.id]=failures.get(topic.id,0)+1
+            state['failed_topics']=failures
+        state.update(last_status='paused_after_error',last_error=err)
+        safe_write(path,state)
+        safe_write(root/'state'/'last_run.json',{'status':'paused_after_error','message':err})
+        print('AUTOPILOT PAUSED:',err,file=sys.stderr)
+        return {'status':'paused_after_error','message':err}
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser()
+    p.add_argument('--root',type=Path,default=ROOT)
+    p.add_argument('--fixture',type=Path,default=None,help='offline fixture, tests only')
+    args=p.parse_args()
+    r=run(args.root,args.fixture)
+    sys.exit(0 if r['status'] in ('daily_limit_reached','draft_ready') else 1)
