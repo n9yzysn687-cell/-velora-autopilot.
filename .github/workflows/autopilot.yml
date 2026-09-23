@@ -1,0 +1,74 @@
+name: VELORA Autopilot bootstrap
+on:
+  push:
+    paths:
+      - '.github/workflows/autopilot.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '17 7 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: velora-autopilot
+  cancel-in-progress: false
+jobs:
+  bootstrap-and-produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify and unpack full source
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat bootstrap/part{01..06}.b64 | base64 --decode > /tmp/velora-source.tar.xz
+          echo '72c7f5b94b1f57c39303aad111a1a703d87152b9a45a731353f5b306109a4574  /tmp/velora-source.tar.xz' | sha256sum --check
+          tar -xJf /tmp/velora-source.tar.xz
+          rm -rf bootstrap
+          git config user.name 'velora-autopilot[bot]'
+          git config user.email 'velora-autopilot[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Install open-source VELORA Autopilot production engine' 
+          git push
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - name: Install open-source production tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng fonts-dejavu-core
+          python -m pip install -r requirements-zerogpu.txt
+      - name: Run all unit and real-MP4 tests
+        run: python -m unittest discover -s tests -v
+      - name: Produce first review-only MP4
+        id: create
+        continue-on-error: true
+        run: python -m autopilot.main
+      - name: Persist production state
+        if: always()
+        run: |
+          git config user.name 'velora-autopilot[bot]'
+          git config user.email 'velora-autopilot[bot]@users.noreply.github.com'
+          git add state/state.json state/last_run.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: save production state [skip ci]'
+            git push
+          fi
+      - name: Archive finished Short and production report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deesezrxh-production-${{ github.run_id }}
+          path: |
+            output/**/short.mp4
+            output/**/story.json
+            output/**/manifest.json
+            state/last_run.json
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Report genuine production failure
+        if: steps.create.outcome == 'failure'
+        run: exit 1
