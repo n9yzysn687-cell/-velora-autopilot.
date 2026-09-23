@@ -14,6 +14,7 @@ import traceback
 from .source import Topic,select_topic
 from .writer import generate_story
 from .render import render
+from .director import make_storyboard
 from .free_gpu import generate_free_clip
 
 
@@ -94,6 +95,7 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
         out=root/'output'/stamp
         out.mkdir(parents=True,exist_ok=True)
         safe_write(out/'story.json',story)
+        storyboard=make_storyboard(story,config['channel_name'])
         safe_write(out/'research.json',research)
         gpu_clip=None
         if config['providers'].get('video')=='hf_zerogpu':
@@ -103,7 +105,7 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
             gpu_clip=generate_free_clip(config['providers'],gpu_prompt,out/'zerogpu_scene.mp4')
         elif config['providers'].get('video')!='motion_design':
             raise RuntimeError('Unrecognized video engine. Paid API fallback is forbidden.')
-        video=render(story,config['channel_name'],out,config.get('max_seconds',29),config.get('language','fr'),gpu_clip)
+        video=render(story,config['channel_name'],out,config.get('max_seconds',29),config.get('language','fr'),gpu_clip,storyboard)
         # Only mark the topic as used once an MP4 passes QA.
         state.setdefault('seen_ids',[]).append(topic.id)
         state['seen_ids']=state['seen_ids'][-1000:]
@@ -126,6 +128,11 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
           'editorial_experiment':{'theme':topic.theme,'variant':variant,'feedback_status':feedback.get('status','not_connected')},
           'script_verified':False,'media_rights_checked':False,'mp4_watched':False,
           'production':video,'story':story,
+          'director':{'version':'V3.2','storyboard_file':'storyboard.json',
+                      'scene_count':video.get('scene_count',storyboard['scene_count']),
+                      'scene_layouts':[s['layout'] for s in storyboard['scenes']],
+                      'captions':'verbatim script excerpts allocated per scene, timing approximate',
+                      'film_fact_checked':False},
           'visual_note':('One actual authenticated ZeroGPU scene plus motion design.' if gpu_clip else 'Stylized graphic motion design. Not Seedance/Wan or photorealistic AI clips.'),
           'next':'Watch the video, verify sources and rights, then publish manually or configure an authorized uploader.'
         }
@@ -137,12 +144,16 @@ def run(root:Path=ROOT, fixture:Path|None=None) -> dict:
             'script_type':config['providers']['script'],
             'video_engine':config['providers'].get('video'),
             'duration_seconds':video.get('duration_seconds'),
+            'director_version':'V3.2',
+            'scene_count':storyboard['scene_count'],
+            'layout_sequence':[x['layout'] for x in storyboard['scenes']],
             'status':'DRAFT_REVIEW_REQUIRED','created_at':stamp})
         ledger['productions']=ledger['productions'][-200:]
         safe_write(ledger_file,ledger)
         result={'status':'draft_ready','video':video['video'],
                 'manifest':str(out/'manifest.json'),
                 'research_report':str(out/'research.json'),
+                'storyboard':str(out/'storyboard.json'),
                 'topic':topic.headline,
                 'source':topic.url,'quality_gate':research.get('gate','HUMAN_FACT_CHECK_REQUIRED')}
         safe_write(root/'state'/'last_run.json',result)
