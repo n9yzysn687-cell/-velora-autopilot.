@@ -1,4 +1,4 @@
-name: VELORA Autopilot · deesezrxh
+name: VELORA Autopilot · deesezrxh V3.1
 on:
   push:
     paths:
@@ -79,6 +79,7 @@ jobs:
           path: |
             output/**/short.mp4
             output/**/story.json
+            output/**/research.json
             output/**/manifest.json
             state/last_run.json
             state/feedback.json
