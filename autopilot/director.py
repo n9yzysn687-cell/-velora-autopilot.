@@ -43,7 +43,7 @@ def split_spoken(script:str,count:int)->list[str]:
 def choose_layouts(headline:str,variant:str,count:int)->list[str]:
     # Deterministic variation with reproducibility in the manifest.
     digest=sha256((headline+'|'+variant).encode()).digest()
-    middles=list(LAYOUTS[1:-1])
+    middles=[layout for layout in LAYOUTS if layout not in ('hero','finale')]
     shift=digest[0]%len(middles)
     middles=middles[shift:]+middles[:shift]
     if digest[1]%2:middles=list(reversed(middles))
