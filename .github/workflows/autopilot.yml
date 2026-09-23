@@ -50,7 +50,9 @@ jobs:
           python -m pip install -r requirements-zerogpu.txt
       - name: Run all unit and real-MP4 tests
         run: python -m unittest discover -s tests -v
-      - name: Produce first review-only MP4
+      - name: Ingest 7-day YouTube metrics and learn before writing
+        run: python -m autopilot.feedback
+      - name: Produce one review-only MP4
         id: create
         continue-on-error: true
         run: python -m autopilot.main
@@ -74,6 +76,7 @@ jobs:
             output/**/story.json
             output/**/manifest.json
             state/last_run.json
+            state/feedback.json
           retention-days: 7
           if-no-files-found: warn
       - name: Report genuine production failure
