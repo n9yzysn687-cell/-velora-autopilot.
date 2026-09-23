@@ -1,5 +1,5 @@
 import json
-from datetime import datetime,timezone
+from datetime import datetime,timezone,timedelta
 from pathlib import Path
 import tempfile
 import unittest
@@ -14,7 +14,7 @@ T=Topic('id-1','A plausible open-source video workflow announcement',
 class FakeResponse:
     def raise_for_status(self):return None
     def json(self):
-        now=datetime.now(timezone.utc).isoformat()
+        now=(datetime.now(timezone.utc)-timedelta(minutes=5)).isoformat()
         return {'hits':[{'objectID':'id-1','title':T.headline,'url':T.url,'created_at':now,'points':14},
                         {'objectID':'id-2','title':'Follow-up open-source model announcement','url':'https://example.org/second','created_at':now,'points':14}]}
 class FakeSession:
