@@ -1,6 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260923T201718Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260923T201718Z/manifest.json",
-  "topic": "Votre guide sur l'intelligence artificielle"
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260924T124538Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260924T124538Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260924T124538Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260924T124538Z/storyboard.json",
+  "topic": "We used an AI agent to fix an open-source bug. Someone asked to ban us",
+  "source": "https://github.com/saulpw/visidata/pull/3229",
+  "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

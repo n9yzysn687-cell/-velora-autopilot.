@@ -1,0 +1,27 @@
+{
+  "productions": [
+    {
+      "id": "20260924T124538Z",
+      "source_url": "https://github.com/saulpw/visidata/pull/3229",
+      "source_title": "We used an AI agent to fix an open-source bug. Someone asked to ban us",
+      "theme": "outils open source",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 6.2,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 19.75,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "cards",
+        "source",
+        "spotlight",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20260924T124538Z"
+    }
+  ]
+}
