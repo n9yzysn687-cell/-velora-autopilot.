@@ -1,20 +1,22 @@
 {
   "seen_ids": [
     "48609994",
-    "49824957"
+    "49824957",
+    "49841997"
   ],
   "runs": {
     "2026-09-23": 1,
-    "2026-09-24": 1
+    "2026-09-24": 1,
+    "2026-09-25": 1
   },
-  "last_topic": "We used an AI agent to fix an open-source bug. Someone asked to ban us",
-  "last_source": "https://github.com/saulpw/visidata/pull/3229",
+  "last_topic": "Show HN: Apowerb, the open-source AI agent runtime (RAG, Text-to-SQL, webhooks)",
+  "last_source": "https://github.com/apowerb/apowerb",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20260924T124538Z",
-  "last_research_score": 6.2,
+  "last_time": "20260925T124910Z",
+  "last_research_score": 5.92,
   "last_research_origin": "hacker_news"
 }

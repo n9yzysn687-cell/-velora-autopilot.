@@ -22,6 +22,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20260924T124538Z"
+    },
+    {
+      "id": "20260925T124910Z",
+      "source_url": "https://github.com/apowerb/apowerb",
+      "source_title": "Show HN: Apowerb, the open-source AI agent runtime (RAG, Text-to-SQL, webhooks)",
+      "theme": "intelligence artificielle",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.92,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.71,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "source",
+        "cards",
+        "split",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20260925T124910Z"
     }
   ]
 }
