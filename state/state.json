@@ -2,21 +2,23 @@
   "seen_ids": [
     "48609994",
     "49824957",
-    "49841997"
+    "49841997",
+    "49833867"
   ],
   "runs": {
     "2026-09-23": 1,
     "2026-09-24": 1,
-    "2026-09-25": 1
+    "2026-09-25": 1,
+    "2026-09-26": 1
   },
-  "last_topic": "Show HN: Apowerb, the open-source AI agent runtime (RAG, Text-to-SQL, webhooks)",
-  "last_source": "https://github.com/apowerb/apowerb",
+  "last_topic": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+  "last_source": "https://github.com/devdotfast/whiteboard",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20260925T124910Z",
-  "last_research_score": 5.92,
+  "last_time": "20260926T121626Z",
+  "last_research_score": 5.57,
   "last_research_origin": "hacker_news"
 }

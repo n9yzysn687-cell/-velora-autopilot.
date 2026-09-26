@@ -45,6 +45,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20260925T124910Z"
+    },
+    {
+      "id": "20260926T121626Z",
+      "source_url": "https://github.com/devdotfast/whiteboard",
+      "source_title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+      "theme": "outils open source",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 5.57,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 22.29,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "chapters",
+        "steps",
+        "spotlight",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20260926T121626Z"
     }
   ]
 }
