@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260926T121626Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260926T121626Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260926T121626Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260926T121626Z/storyboard.json",
-  "topic": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
-  "source": "https://github.com/devdotfast/whiteboard",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260927T130714Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260927T130714Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260927T130714Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260927T130714Z/storyboard.json",
+  "topic": "Can open-source prompt-injection detectors catch realistic AI agent attacks?",
+  "source": "https://github.com/rudratoshs/buried-injections",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
