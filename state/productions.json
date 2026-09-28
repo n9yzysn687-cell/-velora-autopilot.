@@ -91,6 +91,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20260927T130714Z"
+    },
+    {
+      "id": "20260928T153348Z",
+      "source_url": "https://www.openappa.com/",
+      "source_title": "Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents",
+      "theme": "outils open source",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 4.77,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 21.21,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "source",
+        "spotlight",
+        "steps",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20260928T153348Z"
     }
   ]
 }

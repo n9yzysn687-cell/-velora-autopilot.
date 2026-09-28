@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260927T130714Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260927T130714Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260927T130714Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260927T130714Z/storyboard.json",
-  "topic": "Can open-source prompt-injection detectors catch realistic AI agent attacks?",
-  "source": "https://github.com/rudratoshs/buried-injections",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260928T153348Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260928T153348Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260928T153348Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260928T153348Z/storyboard.json",
+  "topic": "Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents",
+  "source": "https://www.openappa.com/",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
