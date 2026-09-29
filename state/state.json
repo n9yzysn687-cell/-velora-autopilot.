@@ -5,7 +5,8 @@
     "49841997",
     "49833867",
     "49827019",
-    "49877515"
+    "49877515",
+    "49888905"
   ],
   "runs": {
     "2026-09-23": 1,
@@ -13,16 +14,17 @@
     "2026-09-25": 1,
     "2026-09-26": 1,
     "2026-09-27": 1,
-    "2026-09-28": 1
+    "2026-09-28": 1,
+    "2026-09-29": 1
   },
-  "last_topic": "Show HN: OpenAPPA – open-source deterministic guardrails that don't break agents",
-  "last_source": "https://www.openappa.com/",
+  "last_topic": "Show HN: Open-source skills for end-to-end video ad campaigns",
+  "last_source": "https://github.com/SupercmoHQ/superCMO-skills",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20260928T153348Z",
-  "last_research_score": 4.77,
+  "last_time": "20260929T140708Z",
+  "last_research_score": 5.99,
   "last_research_origin": "hacker_news"
 }
