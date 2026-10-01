@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260930T134912Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260930T134912Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260930T134912Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20260930T134912Z/storyboard.json",
-  "topic": "Show HN: VoxScribe – local, offline voice dictation for Windows (open source)",
-  "source": "https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261001T143232Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261001T143232Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261001T143232Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261001T143232Z/storyboard.json",
+  "topic": "Show HN: Paperweight – local-first, open-source email cleanup and privacy tool",
+  "source": "https://github.com/wslyvh/paperweight",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

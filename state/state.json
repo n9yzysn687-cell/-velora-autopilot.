@@ -7,26 +7,20 @@
     "49827019",
     "49877515",
     "49888905",
-    "49906717"
+    "49906717",
+    "49909624"
   ],
   "runs": {
-    "2026-09-23": 1,
-    "2026-09-24": 1,
-    "2026-09-25": 1,
-    "2026-09-26": 1,
-    "2026-09-27": 1,
-    "2026-09-28": 1,
-    "2026-09-29": 1,
-    "2026-09-30": 1
+    "2026-10-01": 1
   },
-  "last_topic": "Show HN: VoxScribe – local, offline voice dictation for Windows (open source)",
-  "last_source": "https://github.com/ahmedhmam1994/voxscribe-ai-voice-dictation",
+  "last_topic": "Show HN: Paperweight – local-first, open-source email cleanup and privacy tool",
+  "last_source": "https://github.com/wslyvh/paperweight",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20260930T134912Z",
-  "last_research_score": 5.99,
+  "last_time": "20261001T143232Z",
+  "last_research_score": 5.76,
   "last_research_origin": "hacker_news"
 }
