@@ -8,19 +8,21 @@
     "49877515",
     "49888905",
     "49906717",
-    "49909624"
+    "49909624",
+    "49907551"
   ],
   "runs": {
-    "2026-10-01": 1
+    "2026-10-01": 1,
+    "2026-10-02": 1
   },
-  "last_topic": "Show HN: Paperweight – local-first, open-source email cleanup and privacy tool",
-  "last_source": "https://github.com/wslyvh/paperweight",
+  "last_topic": "HN: Humanbound|Open-source red teaming for AI agents, free hosted tier",
+  "last_source": "https://github.com/humanbound/humanbound",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261001T143232Z",
-  "last_research_score": 5.76,
+  "last_time": "20261002T135522Z",
+  "last_research_score": 5.28,
   "last_research_origin": "hacker_news"
 }
