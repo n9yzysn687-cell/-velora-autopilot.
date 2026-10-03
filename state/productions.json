@@ -206,6 +206,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261002T135522Z"
+    },
+    {
+      "id": "20261003T123654Z",
+      "source_url": "https://github.com/hedgerow-dev/rowan",
+      "source_title": "Show HN: Rowan, an open-source SAST scanner for AI apps (code, models, MCP)\"",
+      "theme": "intelligence artificielle",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 6.0,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 21.0,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "split",
+        "cards",
+        "source",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261003T123654Z"
     }
   ]
 }

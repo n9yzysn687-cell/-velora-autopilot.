@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261002T135522Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261002T135522Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261002T135522Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261002T135522Z/storyboard.json",
-  "topic": "HN: Humanbound|Open-source red teaming for AI agents, free hosted tier",
-  "source": "https://github.com/humanbound/humanbound",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261003T123654Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261003T123654Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261003T123654Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261003T123654Z/storyboard.json",
+  "topic": "Show HN: Rowan, an open-source SAST scanner for AI apps (code, models, MCP)\"",
+  "source": "https://github.com/hedgerow-dev/rowan",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

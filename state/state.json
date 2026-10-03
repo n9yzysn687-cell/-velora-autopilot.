@@ -9,20 +9,22 @@
     "49888905",
     "49906717",
     "49909624",
-    "49907551"
+    "49907551",
+    "49941569"
   ],
   "runs": {
     "2026-10-01": 1,
-    "2026-10-02": 1
+    "2026-10-02": 1,
+    "2026-10-03": 1
   },
-  "last_topic": "HN: Humanbound|Open-source red teaming for AI agents, free hosted tier",
-  "last_source": "https://github.com/humanbound/humanbound",
+  "last_topic": "Show HN: Rowan, an open-source SAST scanner for AI apps (code, models, MCP)\"",
+  "last_source": "https://github.com/hedgerow-dev/rowan",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261002T135522Z",
-  "last_research_score": 5.28,
+  "last_time": "20261003T123654Z",
+  "last_research_score": 6.0,
   "last_research_origin": "hacker_news"
 }
