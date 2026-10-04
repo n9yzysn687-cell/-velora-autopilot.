@@ -229,6 +229,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261003T123654Z"
+    },
+    {
+      "id": "20261004T131457Z",
+      "source_url": "https://github.com/anteloc/ldraw-nova",
+      "source_title": "Show HN: Made an open-source Lego AI generator",
+      "theme": "outils open source",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 5.41,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.71,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "chapters",
+        "steps",
+        "spotlight",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261004T131457Z"
     }
   ]
 }

@@ -10,21 +10,23 @@
     "49906717",
     "49909624",
     "49907551",
-    "49941569"
+    "49941569",
+    "49937916"
   ],
   "runs": {
     "2026-10-01": 1,
     "2026-10-02": 1,
-    "2026-10-03": 1
+    "2026-10-03": 1,
+    "2026-10-04": 1
   },
-  "last_topic": "Show HN: Rowan, an open-source SAST scanner for AI apps (code, models, MCP)\"",
-  "last_source": "https://github.com/hedgerow-dev/rowan",
+  "last_topic": "Show HN: Made an open-source Lego AI generator",
+  "last_source": "https://github.com/anteloc/ldraw-nova",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261003T123654Z",
-  "last_research_score": 6.0,
+  "last_time": "20261004T131457Z",
+  "last_research_score": 5.41,
   "last_research_origin": "hacker_news"
 }
