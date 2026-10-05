@@ -252,6 +252,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261004T131457Z"
+    },
+    {
+      "id": "20261005T160632Z",
+      "source_url": "https://github.com/vincentsch/explainroo",
+      "source_title": "Explainer videos and product demos made by your AI agent. Free and open source",
+      "theme": "outils open source",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 6.49,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 19.92,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "cards",
+        "split",
+        "chapters",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261005T160632Z"
     }
   ]
 }
