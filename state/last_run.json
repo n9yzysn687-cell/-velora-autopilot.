@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261005T160632Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261005T160632Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261005T160632Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261005T160632Z/storyboard.json",
-  "topic": "Explainer videos and product demos made by your AI agent. Free and open source",
-  "source": "https://github.com/vincentsch/explainroo",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261006T141531Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261006T141531Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261006T141531Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261006T141531Z/storyboard.json",
+  "topic": "Show HN: Tinyhat, per-specialist memory for multi-agent Muse (open source)",
+  "source": "https://github.com/tinyhat-ai/muse-office",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

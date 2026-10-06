@@ -275,6 +275,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261005T160632Z"
+    },
+    {
+      "id": "20261006T141531Z",
+      "source_url": "https://github.com/tinyhat-ai/muse-office",
+      "source_title": "Show HN: Tinyhat, per-specialist memory for multi-agent Muse (open source)",
+      "theme": "outils open source",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 5.97,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 21.62,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "split",
+        "cards",
+        "source",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261006T141531Z"
     }
   ]
 }

@@ -12,23 +12,25 @@
     "49907551",
     "49941569",
     "49937916",
-    "49956470"
+    "49956470",
+    "49978800"
   ],
   "runs": {
     "2026-10-01": 1,
     "2026-10-02": 1,
     "2026-10-03": 1,
     "2026-10-04": 1,
-    "2026-10-05": 1
+    "2026-10-05": 1,
+    "2026-10-06": 1
   },
-  "last_topic": "Explainer videos and product demos made by your AI agent. Free and open source",
-  "last_source": "https://github.com/vincentsch/explainroo",
+  "last_topic": "Show HN: Tinyhat, per-specialist memory for multi-agent Muse (open source)",
+  "last_source": "https://github.com/tinyhat-ai/muse-office",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261005T160632Z",
-  "last_research_score": 6.49,
+  "last_time": "20261006T141531Z",
+  "last_research_score": 5.97,
   "last_research_origin": "hacker_news"
 }
