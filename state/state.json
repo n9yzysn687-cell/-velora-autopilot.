@@ -14,7 +14,8 @@
     "49937916",
     "49956470",
     "49978800",
-    "49987765"
+    "49987765",
+    "49993984"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -23,16 +24,17 @@
     "2026-10-04": 1,
     "2026-10-05": 1,
     "2026-10-06": 1,
-    "2026-10-07": 1
+    "2026-10-07": 1,
+    "2026-10-08": 1
   },
-  "last_topic": "Show HN: NanoMuse – An open-source AI agent for your phone and computer",
-  "last_source": "https://github.com/nano-muse/nanoMuse",
+  "last_topic": "Show HN: Checkout this open-source, local-first bioinformatics/AI desktop app",
+  "last_source": "https://github.com/Liatir/liatir-app",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261007T143414Z",
-  "last_research_score": 6.37,
+  "last_time": "20261008T143800Z",
+  "last_research_score": 5.72,
   "last_research_origin": "hacker_news"
 }

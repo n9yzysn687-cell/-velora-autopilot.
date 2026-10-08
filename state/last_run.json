@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261007T143414Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261007T143414Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261007T143414Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261007T143414Z/storyboard.json",
-  "topic": "Show HN: NanoMuse – An open-source AI agent for your phone and computer",
-  "source": "https://github.com/nano-muse/nanoMuse",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261008T143800Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261008T143800Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261008T143800Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261008T143800Z/storyboard.json",
+  "topic": "Show HN: Checkout this open-source, local-first bioinformatics/AI desktop app",
+  "source": "https://github.com/Liatir/liatir-app",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
