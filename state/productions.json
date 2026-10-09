@@ -344,6 +344,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261008T143800Z"
+    },
+    {
+      "id": "20261009T142451Z",
+      "source_url": "https://github.com/thesnarkitecht/rembrandt",
+      "source_title": "Show HN: Free open source Adobe Lightroom alternative, completely local with AI",
+      "theme": "outils open source",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 6.29,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.17,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "spotlight",
+        "source",
+        "cards",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261009T142451Z"
     }
   ]
 }
