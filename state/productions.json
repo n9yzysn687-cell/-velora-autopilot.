@@ -367,6 +367,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261009T142451Z"
+    },
+    {
+      "id": "20261010T134719Z",
+      "source_url": "https://github.com/FranciscoGrandon/antigravity-excel-engine",
+      "source_title": "Antigravity Excel Engine – Dual-Core Excel Automation for AI Agents",
+      "theme": "intelligence artificielle",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 5.18,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.21,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "source",
+        "spotlight",
+        "steps",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261010T134719Z"
     }
   ]
 }

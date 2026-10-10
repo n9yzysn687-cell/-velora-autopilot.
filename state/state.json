@@ -16,7 +16,8 @@
     "49978800",
     "49987765",
     "49993984",
-    "50012199"
+    "50012199",
+    "50028857"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -27,16 +28,17 @@
     "2026-10-06": 1,
     "2026-10-07": 1,
     "2026-10-08": 1,
-    "2026-10-09": 1
+    "2026-10-09": 1,
+    "2026-10-10": 1
   },
-  "last_topic": "Show HN: Free open source Adobe Lightroom alternative, completely local with AI",
-  "last_source": "https://github.com/thesnarkitecht/rembrandt",
+  "last_topic": "Antigravity Excel Engine – Dual-Core Excel Automation for AI Agents",
+  "last_source": "https://github.com/FranciscoGrandon/antigravity-excel-engine",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261009T142451Z",
-  "last_research_score": 6.29,
+  "last_time": "20261010T134719Z",
+  "last_research_score": 5.18,
   "last_research_origin": "hacker_news"
 }
