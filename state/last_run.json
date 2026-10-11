@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261010T134719Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261010T134719Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261010T134719Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261010T134719Z/storyboard.json",
-  "topic": "Antigravity Excel Engine – Dual-Core Excel Automation for AI Agents",
-  "source": "https://github.com/FranciscoGrandon/antigravity-excel-engine",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261011T140645Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261011T140645Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261011T140645Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261011T140645Z/storyboard.json",
+  "topic": "I build an open-source runtime security layer for AI agents – Let's break it",
+  "source": "https://github.com/Pryxor/pryxor",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

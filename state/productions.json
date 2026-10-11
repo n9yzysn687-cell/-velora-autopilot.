@@ -390,6 +390,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261010T134719Z"
+    },
+    {
+      "id": "20261011T140645Z",
+      "source_url": "https://github.com/Pryxor/pryxor",
+      "source_title": "I build an open-source runtime security layer for AI agents – Let's break it",
+      "theme": "intelligence artificielle",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.98,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 19.88,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "cards",
+        "source",
+        "spotlight",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261011T140645Z"
     }
   ]
 }
