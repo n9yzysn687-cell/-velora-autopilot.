@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261011T140645Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261011T140645Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261011T140645Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261011T140645Z/storyboard.json",
-  "topic": "I build an open-source runtime security layer for AI agents – Let's break it",
-  "source": "https://github.com/Pryxor/pryxor",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261012T164655Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261012T164655Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261012T164655Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261012T164655Z/storyboard.json",
+  "topic": "Show HN: Guilds – Open-source inspectable multi-agents collaboration framework",
+  "source": "https://github.com/CigaleAI/guilds",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
