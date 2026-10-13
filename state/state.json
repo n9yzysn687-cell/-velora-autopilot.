@@ -19,7 +19,8 @@
     "50012199",
     "50028857",
     "50041219",
-    "50043499"
+    "50043499",
+    "50071230"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -33,16 +34,17 @@
     "2026-10-09": 1,
     "2026-10-10": 1,
     "2026-10-11": 1,
-    "2026-10-12": 1
+    "2026-10-12": 1,
+    "2026-10-13": 1
   },
-  "last_topic": "Show HN: Guilds – Open-source inspectable multi-agents collaboration framework",
-  "last_source": "https://github.com/CigaleAI/guilds",
+  "last_topic": "Forcefield: Ultra-fast, lightweight, local-first AI Agent Harness",
+  "last_source": "https://github.com/fabledruns/forcefield",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261012T164655Z",
-  "last_research_score": 5.67,
+  "last_time": "20261013T150643Z",
+  "last_research_score": 5.27,
   "last_research_origin": "hacker_news"
 }
