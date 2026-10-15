@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261014T125438Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261014T125438Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261014T125438Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261014T125438Z/storyboard.json",
-  "topic": "Show HN: Jevcrawl – A web crawler for AI agents with no LLM in the crawl loop",
-  "source": "https://github.com/RayenMlayeh/jevcrawl",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261015T124153Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261015T124153Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261015T124153Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261015T124153Z/storyboard.json",
+  "topic": "Nedster – An open-source local AI",
+  "source": "https://github.com/unrealumanga/Nedster",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

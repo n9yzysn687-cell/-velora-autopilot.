@@ -21,7 +21,8 @@
     "50041219",
     "50043499",
     "50071230",
-    "50080450"
+    "50080450",
+    "50091652"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -37,16 +38,17 @@
     "2026-10-11": 1,
     "2026-10-12": 1,
     "2026-10-13": 1,
-    "2026-10-14": 1
+    "2026-10-14": 1,
+    "2026-10-15": 1
   },
-  "last_topic": "Show HN: Jevcrawl – A web crawler for AI agents with no LLM in the crawl loop",
-  "last_source": "https://github.com/RayenMlayeh/jevcrawl",
+  "last_topic": "Nedster – An open-source local AI",
+  "last_source": "https://github.com/unrealumanga/Nedster",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261014T125438Z",
-  "last_research_score": 5.38,
+  "last_time": "20261015T124153Z",
+  "last_research_score": 5.71,
   "last_research_origin": "hacker_news"
 }

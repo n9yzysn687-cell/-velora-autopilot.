@@ -482,6 +482,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261014T125438Z"
+    },
+    {
+      "id": "20261015T124153Z",
+      "source_url": "https://github.com/unrealumanga/Nedster",
+      "source_title": "Nedster – An open-source local AI",
+      "theme": "intelligence artificielle",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.71,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 19.29,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "cards",
+        "split",
+        "chapters",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261015T124153Z"
     }
   ]
 }
