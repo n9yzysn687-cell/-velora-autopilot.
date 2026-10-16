@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261015T124153Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261015T124153Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261015T124153Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261015T124153Z/storyboard.json",
-  "topic": "Nedster – An open-source local AI",
-  "source": "https://github.com/unrealumanga/Nedster",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261016T122927Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261016T122927Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261016T122927Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261016T122927Z/storyboard.json",
+  "topic": "MuscleMemory: Open-source procedural memory for AI agents",
+  "source": "https://github.com/TheWariend/MuscleMemory",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
