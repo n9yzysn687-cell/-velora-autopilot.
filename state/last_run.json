@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261016T122927Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261016T122927Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261016T122927Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261016T122927Z/storyboard.json",
-  "topic": "MuscleMemory: Open-source procedural memory for AI agents",
-  "source": "https://github.com/TheWariend/MuscleMemory",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261017T113928Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261017T113928Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261017T113928Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261017T113928Z/storyboard.json",
+  "topic": "Show HN: We built an open source, agent-first, alternative to Profound",
+  "source": "https://github.com/Canonry/canonry",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

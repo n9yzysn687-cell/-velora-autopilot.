@@ -23,7 +23,8 @@
     "50071230",
     "50080450",
     "50091652",
-    "50113506"
+    "50113506",
+    "50119748"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -41,16 +42,17 @@
     "2026-10-13": 1,
     "2026-10-14": 1,
     "2026-10-15": 1,
-    "2026-10-16": 1
+    "2026-10-16": 1,
+    "2026-10-17": 1
   },
-  "last_topic": "MuscleMemory: Open-source procedural memory for AI agents",
-  "last_source": "https://github.com/TheWariend/MuscleMemory",
+  "last_topic": "Show HN: We built an open source, agent-first, alternative to Profound",
+  "last_source": "https://github.com/Canonry/canonry",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261016T122927Z",
-  "last_research_score": 6.11,
+  "last_time": "20261017T113928Z",
+  "last_research_score": 5.77,
   "last_research_origin": "hacker_news"
 }
