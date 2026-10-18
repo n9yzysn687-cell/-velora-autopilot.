@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261017T113928Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261017T113928Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261017T113928Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261017T113928Z/storyboard.json",
-  "topic": "Show HN: We built an open source, agent-first, alternative to Profound",
-  "source": "https://github.com/Canonry/canonry",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261018T120523Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261018T120523Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261018T120523Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261018T120523Z/storyboard.json",
+  "topic": "Show HN: InBox Wall – A local-first, open-source email sanitizer for AI agents",
+  "source": "https://github.com/Annora998/inboxwall",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

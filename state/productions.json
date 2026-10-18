@@ -551,6 +551,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261017T113928Z"
+    },
+    {
+      "id": "20261018T120523Z",
+      "source_url": "https://github.com/Annora998/inboxwall",
+      "source_title": "Show HN: InBox Wall – A local-first, open-source email sanitizer for AI agents",
+      "theme": "outils open source",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 6.49,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 21.17,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "split",
+        "chapters",
+        "steps",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261018T120523Z"
     }
   ]
 }
