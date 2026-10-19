@@ -574,6 +574,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261018T120523Z"
+    },
+    {
+      "id": "20261019T144351Z",
+      "source_url": "https://github.com/o87enterprises-ai/MonkeyITM",
+      "source_title": "MonkeyITM – open-source broker that sits between agents and the open world",
+      "theme": "intelligence artificielle",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.49,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.17,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "cards",
+        "split",
+        "chapters",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261019T144351Z"
     }
   ]
 }

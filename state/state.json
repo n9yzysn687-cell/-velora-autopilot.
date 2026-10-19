@@ -25,7 +25,8 @@
     "50091652",
     "50113506",
     "50119748",
-    "50134132"
+    "50134132",
+    "50137739"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -45,16 +46,17 @@
     "2026-10-15": 1,
     "2026-10-16": 1,
     "2026-10-17": 1,
-    "2026-10-18": 1
+    "2026-10-18": 1,
+    "2026-10-19": 1
   },
-  "last_topic": "Show HN: InBox Wall – A local-first, open-source email sanitizer for AI agents",
-  "last_source": "https://github.com/Annora998/inboxwall",
+  "last_topic": "MonkeyITM – open-source broker that sits between agents and the open world",
+  "last_source": "https://github.com/o87enterprises-ai/MonkeyITM",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261018T120523Z",
-  "last_research_score": 6.49,
+  "last_time": "20261019T144351Z",
+  "last_research_score": 5.49,
   "last_research_origin": "hacker_news"
 }
