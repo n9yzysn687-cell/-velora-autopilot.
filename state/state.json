@@ -26,7 +26,8 @@
     "50113506",
     "50119748",
     "50134132",
-    "50137739"
+    "50137739",
+    "50163277"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -47,16 +48,17 @@
     "2026-10-16": 1,
     "2026-10-17": 1,
     "2026-10-18": 1,
-    "2026-10-19": 1
+    "2026-10-19": 1,
+    "2026-10-20": 1
   },
-  "last_topic": "MonkeyITM – open-source broker that sits between agents and the open world",
-  "last_source": "https://github.com/o87enterprises-ai/MonkeyITM",
+  "last_topic": "DeepSeek just open-sourced its inference engine",
+  "last_source": "https://github.com/deepseek-ai/DeepInfer",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261019T144351Z",
-  "last_research_score": 5.49,
+  "last_time": "20261020T124637Z",
+  "last_research_score": 6.15,
   "last_research_origin": "hacker_news"
 }
