@@ -27,7 +27,8 @@
     "50119748",
     "50134132",
     "50137739",
-    "50163277"
+    "50163277",
+    "50167286"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -49,16 +50,17 @@
     "2026-10-17": 1,
     "2026-10-18": 1,
     "2026-10-19": 1,
-    "2026-10-20": 1
+    "2026-10-20": 1,
+    "2026-10-21": 1
   },
-  "last_topic": "DeepSeek just open-sourced its inference engine",
-  "last_source": "https://github.com/deepseek-ai/DeepInfer",
+  "last_topic": "Show HN: VoidAccess – open-source dark web OSINT, from query to a graph",
+  "last_source": "https://github.com/KatrielMoses/voidaccess",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261020T124637Z",
-  "last_research_score": 6.15,
+  "last_time": "20261021T125853Z",
+  "last_research_score": 5.72,
   "last_research_origin": "hacker_news"
 }

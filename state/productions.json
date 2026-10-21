@@ -620,6 +620,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261020T124637Z"
+    },
+    {
+      "id": "20261021T125853Z",
+      "source_url": "https://github.com/KatrielMoses/voidaccess",
+      "source_title": "Show HN: VoidAccess – open-source dark web OSINT, from query to a graph",
+      "theme": "outils open source",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.72,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.88,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "spotlight",
+        "steps",
+        "chapters",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261021T125853Z"
     }
   ]
 }

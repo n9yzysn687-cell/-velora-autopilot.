@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261020T124637Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261020T124637Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261020T124637Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261020T124637Z/storyboard.json",
-  "topic": "DeepSeek just open-sourced its inference engine",
-  "source": "https://github.com/deepseek-ai/DeepInfer",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261021T125853Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261021T125853Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261021T125853Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261021T125853Z/storyboard.json",
+  "topic": "Show HN: VoidAccess – open-source dark web OSINT, from query to a graph",
+  "source": "https://github.com/KatrielMoses/voidaccess",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
