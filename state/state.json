@@ -28,7 +28,8 @@
     "50134132",
     "50137739",
     "50163277",
-    "50167286"
+    "50167286",
+    "50183892"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -51,16 +52,17 @@
     "2026-10-18": 1,
     "2026-10-19": 1,
     "2026-10-20": 1,
-    "2026-10-21": 1
+    "2026-10-21": 1,
+    "2026-10-22": 1
   },
-  "last_topic": "Show HN: VoidAccess – open-source dark web OSINT, from query to a graph",
-  "last_source": "https://github.com/KatrielMoses/voidaccess",
+  "last_topic": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
+  "last_source": "https://github.com/omnara-ai/omnara",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261021T125853Z",
-  "last_research_score": 5.72,
+  "last_time": "20261022T130131Z",
+  "last_research_score": 6.37,
   "last_research_origin": "hacker_news"
 }

@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261021T125853Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261021T125853Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261021T125853Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261021T125853Z/storyboard.json",
-  "topic": "Show HN: VoidAccess – open-source dark web OSINT, from query to a graph",
-  "source": "https://github.com/KatrielMoses/voidaccess",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261022T130131Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261022T130131Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261022T130131Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261022T130131Z/storyboard.json",
+  "topic": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
+  "source": "https://github.com/omnara-ai/omnara",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
