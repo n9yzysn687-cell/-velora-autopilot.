@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261022T130131Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261022T130131Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261022T130131Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261022T130131Z/storyboard.json",
-  "topic": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
-  "source": "https://github.com/omnara-ai/omnara",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261023T124002Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261023T124002Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261023T124002Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261023T124002Z/storyboard.json",
+  "topic": "Show HN: Caudra – An open-source terminal coding agent in one native binary",
+  "source": "https://github.com/caudra/caudra",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
