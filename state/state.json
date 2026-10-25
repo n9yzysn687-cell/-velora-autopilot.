@@ -31,7 +31,8 @@
     "50167286",
     "50183892",
     "50195228",
-    "50211548"
+    "50211548",
+    "50223070"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -57,16 +58,17 @@
     "2026-10-21": 1,
     "2026-10-22": 1,
     "2026-10-23": 1,
-    "2026-10-24": 1
+    "2026-10-24": 1,
+    "2026-10-25": 1
   },
-  "last_topic": "Open Source Mobile-Use MCP and AI Agent",
-  "last_source": "https://github.com/ghorbelhamdi/buddy-android",
+  "last_topic": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
+  "last_source": "https://github.com/eliasaronson/lobole",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261024T120301Z",
-  "last_research_score": 5.77,
+  "last_time": "20261025T123618Z",
+  "last_research_score": 5.7,
   "last_research_origin": "hacker_news"
 }

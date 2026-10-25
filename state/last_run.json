@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261024T120301Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261024T120301Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261024T120301Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261024T120301Z/storyboard.json",
-  "topic": "Open Source Mobile-Use MCP and AI Agent",
-  "source": "https://github.com/ghorbelhamdi/buddy-android",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261025T123618Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261025T123618Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261025T123618Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261025T123618Z/storyboard.json",
+  "topic": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
+  "source": "https://github.com/eliasaronson/lobole",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
