@@ -32,7 +32,8 @@
     "50183892",
     "50195228",
     "50211548",
-    "50223070"
+    "50223070",
+    "50259155"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -59,16 +60,17 @@
     "2026-10-22": 1,
     "2026-10-23": 1,
     "2026-10-24": 1,
-    "2026-10-25": 1
+    "2026-10-25": 1,
+    "2026-10-28": 1
   },
-  "last_topic": "Show HN: Loböle, open-source parametric CAD that AI agents can drive",
-  "last_source": "https://github.com/eliasaronson/lobole",
+  "last_topic": "Show HN: PoseForge – Local-first AI studio for images and video (Codex, ComfyUI)",
+  "last_source": "https://github.com/vishwakulkarni/PoseForge",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261025T123618Z",
-  "last_research_score": 5.7,
+  "last_time": "20261028T140421Z",
+  "last_research_score": 6.38,
   "last_research_origin": "hacker_news"
 }
