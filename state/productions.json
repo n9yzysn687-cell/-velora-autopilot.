@@ -758,6 +758,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261028T140421Z"
+    },
+    {
+      "id": "20261029T142528Z",
+      "source_url": "https://github.com/klahrich/replyslip",
+      "source_title": "Show HN: ReplySlip – An open-source async task inbox for AI agents",
+      "theme": "outils open source",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.61,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.67,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "split",
+        "chapters",
+        "steps",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261029T142528Z"
     }
   ]
 }

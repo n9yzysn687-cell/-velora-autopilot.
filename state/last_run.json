@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261028T140421Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261028T140421Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261028T140421Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261028T140421Z/storyboard.json",
-  "topic": "Show HN: PoseForge – Local-first AI studio for images and video (Codex, ComfyUI)",
-  "source": "https://github.com/vishwakulkarni/PoseForge",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261029T142528Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261029T142528Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261029T142528Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261029T142528Z/storyboard.json",
+  "topic": "Show HN: ReplySlip – An open-source async task inbox for AI agents",
+  "source": "https://github.com/klahrich/replyslip",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
