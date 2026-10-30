@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261029T142528Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261029T142528Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261029T142528Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261029T142528Z/storyboard.json",
-  "topic": "Show HN: ReplySlip – An open-source async task inbox for AI agents",
-  "source": "https://github.com/klahrich/replyslip",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261030T141545Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261030T141545Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261030T141545Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261030T141545Z/storyboard.json",
+  "topic": "Show HN: Navital Gym – open environments for testing AI agents on Indian tasks",
+  "source": "https://github.com/Navitallabs/navital-gym",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

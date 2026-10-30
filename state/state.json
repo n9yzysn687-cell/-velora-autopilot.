@@ -34,7 +34,8 @@
     "50211548",
     "50223070",
     "50259155",
-    "50272510"
+    "50272510",
+    "50303475"
   ],
   "runs": {
     "2026-10-01": 1,
@@ -63,16 +64,17 @@
     "2026-10-24": 1,
     "2026-10-25": 1,
     "2026-10-28": 1,
-    "2026-10-29": 1
+    "2026-10-29": 1,
+    "2026-10-30": 1
   },
-  "last_topic": "Show HN: ReplySlip – An open-source async task inbox for AI agents",
-  "last_source": "https://github.com/klahrich/replyslip",
+  "last_topic": "Show HN: Navital Gym – open environments for testing AI agents on Indian tasks",
+  "last_source": "https://github.com/Navitallabs/navital-gym",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261029T142528Z",
-  "last_research_score": 5.61,
+  "last_time": "20261030T141545Z",
+  "last_research_score": 5.21,
   "last_research_origin": "hacker_news"
 }
