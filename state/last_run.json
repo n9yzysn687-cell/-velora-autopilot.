@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261030T141545Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261030T141545Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261030T141545Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261030T141545Z/storyboard.json",
-  "topic": "Show HN: Navital Gym – open environments for testing AI agents on Indian tasks",
-  "source": "https://github.com/Navitallabs/navital-gym",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261031T134110Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261031T134110Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261031T134110Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261031T134110Z/storyboard.json",
+  "topic": "Open Science: The open-source AI workbench for scientific research",
+  "source": "https://github.com/synthetic-sciences/openscience",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

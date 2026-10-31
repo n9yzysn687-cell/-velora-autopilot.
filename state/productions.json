@@ -804,6 +804,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261030T141545Z"
+    },
+    {
+      "id": "20261031T134110Z",
+      "source_url": "https://github.com/synthetic-sciences/openscience",
+      "source_title": "Open Science: The open-source AI workbench for scientific research",
+      "theme": "intelligence artificielle",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.2,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.04,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "split",
+        "chapters",
+        "steps",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261031T134110Z"
     }
   ]
 }
