@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261031T134110Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261031T134110Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261031T134110Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261031T134110Z/storyboard.json",
-  "topic": "Open Science: The open-source AI workbench for scientific research",
-  "source": "https://github.com/synthetic-sciences/openscience",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261101T141841Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261101T141841Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261101T141841Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261101T141841Z/storyboard.json",
+  "topic": "Show HN: OpenProject Agent Engine – Automated Workflow and Agent Dispatch",
+  "source": "https://github.com/310networks/openproject-agent-engine",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
