@@ -37,19 +37,21 @@
     "50272510",
     "50303475",
     "50315427",
-    "50323807"
+    "50323807",
+    "50316116"
   ],
   "runs": {
-    "2026-11-01": 1
+    "2026-11-01": 1,
+    "2026-11-02": 1
   },
-  "last_topic": "Show HN: OpenProject Agent Engine – Automated Workflow and Agent Dispatch",
-  "last_source": "https://github.com/310networks/openproject-agent-engine",
+  "last_topic": "DeepSeek open-sources dsh-superagent, a coding agent largely built by agents",
+  "last_source": "https://github.com/deepseek-ai/dsh-superagent-prototype",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261101T141841Z",
-  "last_research_score": 5.97,
+  "last_time": "20261102T170851Z",
+  "last_research_score": 5.58,
   "last_research_origin": "hacker_news"
 }

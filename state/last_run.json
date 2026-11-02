@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261101T141841Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261101T141841Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261101T141841Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261101T141841Z/storyboard.json",
-  "topic": "Show HN: OpenProject Agent Engine – Automated Workflow and Agent Dispatch",
-  "source": "https://github.com/310networks/openproject-agent-engine",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261102T170851Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261102T170851Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261102T170851Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261102T170851Z/storyboard.json",
+  "topic": "DeepSeek open-sources dsh-superagent, a coding agent largely built by agents",
+  "source": "https://github.com/deepseek-ai/dsh-superagent-prototype",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
