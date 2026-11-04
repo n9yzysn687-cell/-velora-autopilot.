@@ -39,21 +39,23 @@
     "50315427",
     "50323807",
     "50316116",
-    "50341649"
+    "50341649",
+    "50364706"
   ],
   "runs": {
     "2026-11-01": 1,
     "2026-11-02": 1,
-    "2026-11-03": 1
+    "2026-11-03": 1,
+    "2026-11-04": 1
   },
-  "last_topic": "Show HN: Mago, an open source AI video studio, runs locally with Comfy",
-  "last_source": "https://github.com/MagoStudio/MagoStudio",
+  "last_topic": "Show HN: Shield KYA – Open-source audit trail and gate for AI agent tool calls",
+  "last_source": "https://github.com/The-Pixel-Boys/shield-kya",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261103T151505Z",
-  "last_research_score": 5.76,
+  "last_time": "20261104T152905Z",
+  "last_research_score": 6.05,
   "last_research_origin": "hacker_news"
 }

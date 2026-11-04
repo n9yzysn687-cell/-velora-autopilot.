@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261103T151505Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261103T151505Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261103T151505Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261103T151505Z/storyboard.json",
-  "topic": "Show HN: Mago, an open source AI video studio, runs locally with Comfy",
-  "source": "https://github.com/MagoStudio/MagoStudio",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261104T152905Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261104T152905Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261104T152905Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261104T152905Z/storyboard.json",
+  "topic": "Show HN: Shield KYA – Open-source audit trail and gate for AI agent tool calls",
+  "source": "https://github.com/The-Pixel-Boys/shield-kya",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
