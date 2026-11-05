@@ -40,22 +40,24 @@
     "50323807",
     "50316116",
     "50341649",
-    "50364706"
+    "50364706",
+    "50372117"
   ],
   "runs": {
     "2026-11-01": 1,
     "2026-11-02": 1,
     "2026-11-03": 1,
-    "2026-11-04": 1
+    "2026-11-04": 1,
+    "2026-11-05": 1
   },
-  "last_topic": "Show HN: Shield KYA – Open-source audit trail and gate for AI agent tool calls",
-  "last_source": "https://github.com/The-Pixel-Boys/shield-kya",
+  "last_topic": "OpenRing – Open-source, self-hosted voice AI agent platform (Vapi alternative)",
+  "last_source": "https://github.com/elifalanrocha/openring",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261104T152905Z",
-  "last_research_score": 6.05,
+  "last_time": "20261105T153220Z",
+  "last_research_score": 5.8,
   "last_research_origin": "hacker_news"
 }
