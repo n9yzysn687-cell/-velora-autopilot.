@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261105T153220Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261105T153220Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261105T153220Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261105T153220Z/storyboard.json",
-  "topic": "OpenRing – Open-source, self-hosted voice AI agent platform (Vapi alternative)",
-  "source": "https://github.com/elifalanrocha/openring",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261106T150722Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261106T150722Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261106T150722Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261106T150722Z/storyboard.json",
+  "topic": "Open-source LLM Firewall with reversible PII scrubbing and FinOps routing",
+  "source": "https://github.com/67spp/sentinsentinel-ai-gateway",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
