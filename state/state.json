@@ -43,7 +43,8 @@
     "50364706",
     "50372117",
     "50369623",
-    "50401901"
+    "50401901",
+    "50405263"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -52,16 +53,17 @@
     "2026-11-04": 1,
     "2026-11-05": 1,
     "2026-11-06": 1,
-    "2026-11-07": 1
+    "2026-11-07": 1,
+    "2026-11-08": 1
   },
-  "last_topic": "Open source Matlab Alternative, first release.",
-  "last_source": "https://github.com/me-farza/opennumlab",
+  "last_topic": "Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8",
+  "last_source": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261107T140622Z",
-  "last_research_score": 5.1,
+  "last_time": "20261108T142040Z",
+  "last_research_score": 6.29,
   "last_research_origin": "hacker_news"
 }

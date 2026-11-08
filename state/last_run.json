@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261107T140622Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261107T140622Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261107T140622Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261107T140622Z/storyboard.json",
-  "topic": "Open source Matlab Alternative, first release.",
-  "source": "https://github.com/me-farza/opennumlab",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261108T142040Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261108T142040Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261108T142040Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261108T142040Z/storyboard.json",
+  "topic": "Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8",
+  "source": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

@@ -988,6 +988,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261107T140622Z"
+    },
+    {
+      "id": "20261108T142040Z",
+      "source_url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+      "source_title": "Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8",
+      "theme": "création vidéo IA",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 6.29,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 21.12,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "cards",
+        "split",
+        "chapters",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261108T142040Z"
     }
   ]
 }
