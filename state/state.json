@@ -44,7 +44,8 @@
     "50372117",
     "50369623",
     "50401901",
-    "50405263"
+    "50405263",
+    "50424070"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -54,16 +55,17 @@
     "2026-11-05": 1,
     "2026-11-06": 1,
     "2026-11-07": 1,
-    "2026-11-08": 1
+    "2026-11-08": 1,
+    "2026-11-09": 1
   },
-  "last_topic": "Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8",
-  "last_source": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+  "last_topic": "Show HN: TimeScroll – an open-source, local replacement for Rewind on Mac",
+  "last_source": "https://github.com/XInTheDark/TimeScrollApp",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261108T142040Z",
-  "last_research_score": 6.29,
+  "last_time": "20261109T173600Z",
+  "last_research_score": 5.96,
   "last_research_origin": "hacker_news"
 }
