@@ -45,7 +45,8 @@
     "50369623",
     "50401901",
     "50405263",
-    "50424070"
+    "50424070",
+    "50439141"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -56,16 +57,17 @@
     "2026-11-06": 1,
     "2026-11-07": 1,
     "2026-11-08": 1,
-    "2026-11-09": 1
+    "2026-11-09": 1,
+    "2026-11-10": 1
   },
-  "last_topic": "Show HN: TimeScroll – an open-source, local replacement for Rewind on Mac",
-  "last_source": "https://github.com/XInTheDark/TimeScrollApp",
+  "last_topic": "Show HN: Cosh – An open-source AI agent orchestrator",
+  "last_source": "https://github.com/DiegoZaluski/co-sh",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261109T173600Z",
-  "last_research_score": 5.96,
+  "last_time": "20261110T153824Z",
+  "last_research_score": 6.05,
   "last_research_origin": "hacker_news"
 }
