@@ -46,7 +46,8 @@
     "50401901",
     "50405263",
     "50424070",
-    "50439141"
+    "50439141",
+    "50443264"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -58,16 +59,17 @@
     "2026-11-07": 1,
     "2026-11-08": 1,
     "2026-11-09": 1,
-    "2026-11-10": 1
+    "2026-11-10": 1,
+    "2026-11-12": 1
   },
-  "last_topic": "Show HN: Cosh – An open-source AI agent orchestrator",
-  "last_source": "https://github.com/DiegoZaluski/co-sh",
+  "last_topic": "TimeNet: Open-source data infrastructure for Temporal Foundation Models",
+  "last_source": "https://github.com/OpenTSLM/TimeNet",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261110T153824Z",
-  "last_research_score": 6.05,
+  "last_time": "20261112T160107Z",
+  "last_research_score": 5.9,
   "last_research_origin": "hacker_news"
 }
