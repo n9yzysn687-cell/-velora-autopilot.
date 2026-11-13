@@ -1080,6 +1080,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261112T160107Z"
+    },
+    {
+      "id": "20261113T152723Z",
+      "source_url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
+      "source_title": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
+      "theme": "automatisation",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 6.41,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 21.38,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "split",
+        "chapters",
+        "steps",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261113T152723Z"
     }
   ]
 }

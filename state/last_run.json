@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261112T160107Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261112T160107Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261112T160107Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261112T160107Z/storyboard.json",
-  "topic": "TimeNet: Open-source data infrastructure for Temporal Foundation Models",
-  "source": "https://github.com/OpenTSLM/TimeNet",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261113T152723Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261113T152723Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261113T152723Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261113T152723Z/storyboard.json",
+  "topic": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
+  "source": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

@@ -47,7 +47,8 @@
     "50405263",
     "50424070",
     "50439141",
-    "50443264"
+    "50443264",
+    "50471650"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -60,16 +61,17 @@
     "2026-11-08": 1,
     "2026-11-09": 1,
     "2026-11-10": 1,
-    "2026-11-12": 1
+    "2026-11-12": 1,
+    "2026-11-13": 1
   },
-  "last_topic": "TimeNet: Open-source data infrastructure for Temporal Foundation Models",
-  "last_source": "https://github.com/OpenTSLM/TimeNet",
+  "last_topic": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
+  "last_source": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261112T160107Z",
-  "last_research_score": 5.9,
+  "last_time": "20261113T152723Z",
+  "last_research_score": 6.41,
   "last_research_origin": "hacker_news"
 }
