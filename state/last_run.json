@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261113T152723Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261113T152723Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261113T152723Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261113T152723Z/storyboard.json",
-  "topic": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
-  "source": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261114T141257Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261114T141257Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261114T141257Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261114T141257Z/storyboard.json",
+  "topic": "Show HN: Timon, an open-source AI workstation for coordinating agents",
+  "source": "https://github.com/ai-timon/timon",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
