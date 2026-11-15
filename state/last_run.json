@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261114T141257Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261114T141257Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261114T141257Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261114T141257Z/storyboard.json",
-  "topic": "Show HN: Timon, an open-source AI workstation for coordinating agents",
-  "source": "https://github.com/ai-timon/timon",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261115T144836Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261115T144836Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261115T144836Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261115T144836Z/storyboard.json",
+  "topic": "Show HN: Langfuse AI Gateway, open source rust gateway to trace every LLM call",
+  "source": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

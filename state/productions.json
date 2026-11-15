@@ -1126,6 +1126,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261114T141257Z"
+    },
+    {
+      "id": "20261115T144836Z",
+      "source_url": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+      "source_title": "Show HN: Langfuse AI Gateway, open source rust gateway to trace every LLM call",
+      "theme": "outils open source",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 5.6,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.58,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "spotlight",
+        "source",
+        "cards",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261115T144836Z"
     }
   ]
 }
