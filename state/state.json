@@ -50,7 +50,8 @@
     "50443264",
     "50471650",
     "50496631",
-    "50484682"
+    "50484682",
+    "50517803"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -66,16 +67,17 @@
     "2026-11-12": 1,
     "2026-11-13": 1,
     "2026-11-14": 1,
-    "2026-11-15": 1
+    "2026-11-15": 1,
+    "2026-11-16": 1
   },
-  "last_topic": "Show HN: Langfuse AI Gateway, open source rust gateway to trace every LLM call",
-  "last_source": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+  "last_topic": "Show HN: Coral – Open-source gateway where agents write their own tools",
+  "last_source": "https://github.com/withcoral/coral",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261115T144836Z",
-  "last_research_score": 5.6,
+  "last_time": "20261116T170606Z",
+  "last_research_score": 6.49,
   "last_research_origin": "hacker_news"
 }

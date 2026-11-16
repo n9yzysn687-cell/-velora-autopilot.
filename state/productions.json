@@ -1149,6 +1149,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261115T144836Z"
+    },
+    {
+      "id": "20261116T170606Z",
+      "source_url": "https://github.com/withcoral/coral",
+      "source_title": "Show HN: Coral – Open-source gateway where agents write their own tools",
+      "theme": "intelligence artificielle",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 6.49,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.58,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "spotlight",
+        "steps",
+        "chapters",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261116T170606Z"
     }
   ]
 }
