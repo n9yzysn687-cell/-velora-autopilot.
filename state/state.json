@@ -51,7 +51,8 @@
     "50471650",
     "50496631",
     "50484682",
-    "50517803"
+    "50517803",
+    "50533270"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -68,16 +69,17 @@
     "2026-11-13": 1,
     "2026-11-14": 1,
     "2026-11-15": 1,
-    "2026-11-16": 1
+    "2026-11-16": 1,
+    "2026-11-17": 1
   },
-  "last_topic": "Show HN: Coral – Open-source gateway where agents write their own tools",
-  "last_source": "https://github.com/withcoral/coral",
+  "last_topic": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+  "last_source": "https://github.com/RunanywhereAI/trnrt",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261116T170606Z",
-  "last_research_score": 6.49,
+  "last_time": "20261117T165605Z",
+  "last_research_score": 6.71,
   "last_research_origin": "hacker_news"
 }
