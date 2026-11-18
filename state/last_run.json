@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261117T165605Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261117T165605Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261117T165605Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261117T165605Z/storyboard.json",
-  "topic": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
-  "source": "https://github.com/RunanywhereAI/trnrt",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261118T162949Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261118T162949Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261118T162949Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261118T162949Z/storyboard.json",
+  "topic": "Show HN: Agav – an open-source terminal agent designed to waste fewer tokens",
+  "source": "https://github.com/prapaa-ai/agav",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

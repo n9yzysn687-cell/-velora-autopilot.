@@ -1195,6 +1195,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261117T165605Z"
+    },
+    {
+      "id": "20261118T162949Z",
+      "source_url": "https://github.com/prapaa-ai/agav",
+      "source_title": "Show HN: Agav – an open-source terminal agent designed to waste fewer tokens",
+      "theme": "outils open source",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 6.07,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.88,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "steps",
+        "spotlight",
+        "source",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261118T162949Z"
     }
   ]
 }
