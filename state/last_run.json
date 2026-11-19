@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261118T162949Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261118T162949Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261118T162949Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261118T162949Z/storyboard.json",
-  "topic": "Show HN: Agav – an open-source terminal agent designed to waste fewer tokens",
-  "source": "https://github.com/prapaa-ai/agav",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261119T164135Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261119T164135Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261119T164135Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261119T164135Z/storyboard.json",
+  "topic": "Raven Recon – An open-source security research framework with AI agents",
+  "source": "https://github.com/9illcodelli6-cpp69cve/raven-recon",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

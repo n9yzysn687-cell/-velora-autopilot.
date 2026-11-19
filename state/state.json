@@ -53,7 +53,8 @@
     "50484682",
     "50517803",
     "50533270",
-    "50531644"
+    "50531644",
+    "50562292"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -72,16 +73,17 @@
     "2026-11-15": 1,
     "2026-11-16": 1,
     "2026-11-17": 1,
-    "2026-11-18": 1
+    "2026-11-18": 1,
+    "2026-11-19": 1
   },
-  "last_topic": "Show HN: Agav – an open-source terminal agent designed to waste fewer tokens",
-  "last_source": "https://github.com/prapaa-ai/agav",
+  "last_topic": "Raven Recon – An open-source security research framework with AI agents",
+  "last_source": "https://github.com/9illcodelli6-cpp69cve/raven-recon",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261118T162949Z",
-  "last_research_score": 6.07,
+  "last_time": "20261119T164135Z",
+  "last_research_score": 5.97,
   "last_research_origin": "hacker_news"
 }
