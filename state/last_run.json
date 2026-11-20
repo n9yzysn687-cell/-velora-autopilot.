@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261119T164135Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261119T164135Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261119T164135Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261119T164135Z/storyboard.json",
-  "topic": "Raven Recon – An open-source security research framework with AI agents",
-  "source": "https://github.com/9illcodelli6-cpp69cve/raven-recon",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261120T161428Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261120T161428Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261120T161428Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261120T161428Z/storyboard.json",
+  "topic": "Show HN: RedCat an open-source AI agent for your desktop",
+  "source": "https://github.com/manamaliahmad/redcat",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
