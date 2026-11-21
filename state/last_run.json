@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261120T161428Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261120T161428Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261120T161428Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261120T161428Z/storyboard.json",
-  "topic": "Show HN: RedCat an open-source AI agent for your desktop",
-  "source": "https://github.com/manamaliahmad/redcat",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261121T152455Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261121T152455Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261121T152455Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261121T152455Z/storyboard.json",
+  "topic": "Show HN: Full Production Studio, 77 open-source AI skills for video creators",
+  "source": "https://github.com/alfaris/full-production-studio",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
