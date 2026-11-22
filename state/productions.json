@@ -1287,6 +1287,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261121T152455Z"
+    },
+    {
+      "id": "20261122T152423Z",
+      "source_url": "https://github.com/DevDizzle/gammarips-harness",
+      "source_title": "Open-source harness and MCP dataset for options trading with AI agents",
+      "theme": "outils open source",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.75,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.17,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "chapters",
+        "steps",
+        "spotlight",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261122T152423Z"
     }
   ]
 }

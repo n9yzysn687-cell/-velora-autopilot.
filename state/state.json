@@ -56,7 +56,8 @@
     "50531644",
     "50562292",
     "50548013",
-    "50577746"
+    "50577746",
+    "50594625"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -78,16 +79,17 @@
     "2026-11-18": 1,
     "2026-11-19": 1,
     "2026-11-20": 1,
-    "2026-11-21": 1
+    "2026-11-21": 1,
+    "2026-11-22": 1
   },
-  "last_topic": "Show HN: Full Production Studio, 77 open-source AI skills for video creators",
-  "last_source": "https://github.com/alfaris/full-production-studio",
+  "last_topic": "Open-source harness and MCP dataset for options trading with AI agents",
+  "last_source": "https://github.com/DevDizzle/gammarips-harness",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261121T152455Z",
-  "last_research_score": 5.73,
+  "last_time": "20261122T152423Z",
+  "last_research_score": 5.75,
   "last_research_origin": "hacker_news"
 }

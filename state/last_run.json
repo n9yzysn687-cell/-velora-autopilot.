@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261121T152455Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261121T152455Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261121T152455Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261121T152455Z/storyboard.json",
-  "topic": "Show HN: Full Production Studio, 77 open-source AI skills for video creators",
-  "source": "https://github.com/alfaris/full-production-studio",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261122T152423Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261122T152423Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261122T152423Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261122T152423Z/storyboard.json",
+  "topic": "Open-source harness and MCP dataset for options trading with AI agents",
+  "source": "https://github.com/DevDizzle/gammarips-harness",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
