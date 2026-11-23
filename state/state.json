@@ -57,7 +57,8 @@
     "50562292",
     "50548013",
     "50577746",
-    "50594625"
+    "50594625",
+    "50616292"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -80,16 +81,17 @@
     "2026-11-19": 1,
     "2026-11-20": 1,
     "2026-11-21": 1,
-    "2026-11-22": 1
+    "2026-11-22": 1,
+    "2026-11-23": 1
   },
-  "last_topic": "Open-source harness and MCP dataset for options trading with AI agents",
-  "last_source": "https://github.com/DevDizzle/gammarips-harness",
+  "last_topic": "Open-source local AI shop for small businesses across Telegram, WhatsApp and web",
+  "last_source": "https://github.com/ownshopai/ownshopai",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261122T152423Z",
-  "last_research_score": 5.75,
+  "last_time": "20261123T191645Z",
+  "last_research_score": 5.96,
   "last_research_origin": "hacker_news"
 }
