@@ -58,7 +58,8 @@
     "50548013",
     "50577746",
     "50594625",
-    "50616292"
+    "50616292",
+    "50605502"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -82,16 +83,17 @@
     "2026-11-20": 1,
     "2026-11-21": 1,
     "2026-11-22": 1,
-    "2026-11-23": 1
+    "2026-11-23": 1,
+    "2026-11-24": 1
   },
-  "last_topic": "Open-source local AI shop for small businesses across Telegram, WhatsApp and web",
-  "last_source": "https://github.com/ownshopai/ownshopai",
+  "last_topic": "Show HN: Inbox Envoy, an open-source email triage skill for your own AI agent",
+  "last_source": "https://github.com/salespeak-ai/inbox-envoy",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261123T191645Z",
-  "last_research_score": 5.96,
+  "last_time": "20261124T185602Z",
+  "last_research_score": 5.5,
   "last_research_origin": "hacker_news"
 }

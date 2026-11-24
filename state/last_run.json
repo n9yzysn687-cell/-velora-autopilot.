@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261123T191645Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261123T191645Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261123T191645Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261123T191645Z/storyboard.json",
-  "topic": "Open-source local AI shop for small businesses across Telegram, WhatsApp and web",
-  "source": "https://github.com/ownshopai/ownshopai",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261124T185602Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261124T185602Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261124T185602Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261124T185602Z/storyboard.json",
+  "topic": "Show HN: Inbox Envoy, an open-source email triage skill for your own AI agent",
+  "source": "https://github.com/salespeak-ai/inbox-envoy",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
