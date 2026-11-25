@@ -1356,6 +1356,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261124T185602Z"
+    },
+    {
+      "id": "20261125T175958Z",
+      "source_url": "https://github.com/Digisensus/digisensus-recorder",
+      "source_title": "Show HN: Call / meeting recorder for Mac. open source local models or free cloud",
+      "theme": "outils open source",
+      "variant": "direct",
+      "source_type": "hacker_news",
+      "research_score": 6.42,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.71,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "cards",
+        "source",
+        "spotlight",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261125T175958Z"
     }
   ]
 }

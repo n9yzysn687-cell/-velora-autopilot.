@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261124T185602Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261124T185602Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261124T185602Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261124T185602Z/storyboard.json",
-  "topic": "Show HN: Inbox Envoy, an open-source email triage skill for your own AI agent",
-  "source": "https://github.com/salespeak-ai/inbox-envoy",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261125T175958Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261125T175958Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261125T175958Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261125T175958Z/storyboard.json",
+  "topic": "Show HN: Call / meeting recorder for Mac. open source local models or free cloud",
+  "source": "https://github.com/Digisensus/digisensus-recorder",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
