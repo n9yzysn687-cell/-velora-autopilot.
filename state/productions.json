@@ -1379,6 +1379,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261125T175958Z"
+    },
+    {
+      "id": "20261126T174531Z",
+      "source_url": "https://github.com/edan-ais/agentkey",
+      "source_title": "Show HN: AgentKey, open source, agents log in without seeing passwords",
+      "theme": "outils open source",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.5,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 21.08,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "cards",
+        "source",
+        "spotlight",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261126T174531Z"
     }
   ]
 }

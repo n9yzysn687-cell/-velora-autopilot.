@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261125T175958Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261125T175958Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261125T175958Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261125T175958Z/storyboard.json",
-  "topic": "Show HN: Call / meeting recorder for Mac. open source local models or free cloud",
-  "source": "https://github.com/Digisensus/digisensus-recorder",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261126T174531Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261126T174531Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261126T174531Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261126T174531Z/storyboard.json",
+  "topic": "Show HN: AgentKey, open source, agents log in without seeing passwords",
+  "source": "https://github.com/edan-ais/agentkey",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }
