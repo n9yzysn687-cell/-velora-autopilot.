@@ -1,10 +1,10 @@
 {
   "status": "draft_ready",
-  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261126T174531Z/short.mp4",
-  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261126T174531Z/manifest.json",
-  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261126T174531Z/research.json",
-  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261126T174531Z/storyboard.json",
-  "topic": "Show HN: AgentKey, open source, agents log in without seeing passwords",
-  "source": "https://github.com/edan-ais/agentkey",
+  "video": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261127T172957Z/short.mp4",
+  "manifest": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261127T172957Z/manifest.json",
+  "research_report": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261127T172957Z/research.json",
+  "storyboard": "/home/runner/work/-velora-autopilot./-velora-autopilot./output/20261127T172957Z/storyboard.json",
+  "topic": "Show HN: Open-Sourced Code Mode to Cut ~60% of My Rust Agent's Token Burn",
+  "source": "https://github.com/legend-of-alan/ghostmode",
   "quality_gate": "SOURCE_DISCOVERY_ONLY_HUMAN_FACT_CHECK_REQUIRED"
 }

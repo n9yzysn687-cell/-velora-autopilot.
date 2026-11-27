@@ -61,7 +61,8 @@
     "50616292",
     "50605502",
     "50634230",
-    "50637749"
+    "50637749",
+    "50665796"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -88,16 +89,17 @@
     "2026-11-23": 1,
     "2026-11-24": 1,
     "2026-11-25": 1,
-    "2026-11-26": 1
+    "2026-11-26": 1,
+    "2026-11-27": 1
   },
-  "last_topic": "Show HN: AgentKey, open source, agents log in without seeing passwords",
-  "last_source": "https://github.com/edan-ais/agentkey",
+  "last_topic": "Show HN: Open-Sourced Code Mode to Cut ~60% of My Rust Agent's Token Burn",
+  "last_source": "https://github.com/legend-of-alan/ghostmode",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261126T174531Z",
-  "last_research_score": 5.5,
+  "last_time": "20261127T172957Z",
+  "last_research_score": 5.22,
   "last_research_origin": "hacker_news"
 }
