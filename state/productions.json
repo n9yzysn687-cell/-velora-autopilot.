@@ -1425,6 +1425,29 @@
       ],
       "status": "DRAFT_REVIEW_REQUIRED",
       "created_at": "20261127T172957Z"
+    },
+    {
+      "id": "20261128T161329Z",
+      "source_url": "https://github.com/code-forge-temple/agentic-signal",
+      "source_title": "Show HN: Agentic Signal – build AI agents from nodes, run them on local models",
+      "theme": "intelligence artificielle",
+      "variant": "question",
+      "source_type": "hacker_news",
+      "research_score": 5.99,
+      "script_type": "template",
+      "video_engine": "motion_design",
+      "duration_seconds": 20.25,
+      "director_version": "V3.2",
+      "scene_count": 5,
+      "layout_sequence": [
+        "hero",
+        "chapters",
+        "split",
+        "cards",
+        "finale"
+      ],
+      "status": "DRAFT_REVIEW_REQUIRED",
+      "created_at": "20261128T161329Z"
     }
   ]
 }

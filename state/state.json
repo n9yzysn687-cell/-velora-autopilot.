@@ -62,7 +62,8 @@
     "50605502",
     "50634230",
     "50637749",
-    "50665796"
+    "50665796",
+    "50676922"
   ],
   "runs": {
     "2026-11-01": 1,
@@ -90,16 +91,17 @@
     "2026-11-24": 1,
     "2026-11-25": 1,
     "2026-11-26": 1,
-    "2026-11-27": 1
+    "2026-11-27": 1,
+    "2026-11-28": 1
   },
-  "last_topic": "Show HN: Open-Sourced Code Mode to Cut ~60% of My Rust Agent's Token Burn",
-  "last_source": "https://github.com/legend-of-alan/ghostmode",
+  "last_topic": "Show HN: Agentic Signal – build AI agents from nodes, run them on local models",
+  "last_source": "https://github.com/code-forge-temple/agentic-signal",
   "last_status": "draft_ready",
   "last_error": "",
   "failed_topics": {
     "48609994": 1
   },
-  "last_time": "20261127T172957Z",
-  "last_research_score": 5.22,
+  "last_time": "20261128T161329Z",
+  "last_research_score": 5.99,
   "last_research_origin": "hacker_news"
 }
